@@ -1,3 +1,6 @@
+import 'package:code_practice/Buttons/check_in_button_page.dart';
+import 'package:code_practice/Buttons/route_return_page.dart';
+import 'package:code_practice/Buttons/transfer_button_page.dart';
 import 'package:flutter/material.dart';
 
 class ButtonsHomepage extends StatelessWidget {
@@ -30,7 +33,14 @@ class ButtonsHomepage extends StatelessWidget {
             iconAlignment: IconAlignment.start,
             icon: const Icon(Icons.warehouse),
             style: outlinedButtonStyle,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const CheckInButtonPage(),
+                ),
+              );
+            },
             label: const Text('Check In'),
           ),
           OutlinedButton.icon(
@@ -49,7 +59,14 @@ class ButtonsHomepage extends StatelessWidget {
               iconAlignment: IconAlignment.start,
               icon: const Icon(Icons.content_paste_go_outlined),
               style: outlinedButtonStyle,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const TransferButtonPage(),
+                  ),
+                );
+              },
               label: const Text('Transfer')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
@@ -61,7 +78,14 @@ class ButtonsHomepage extends StatelessWidget {
               iconAlignment: IconAlignment.start,
               icon: const Icon(Icons.emoji_transportation),
               style: outlinedButtonStyle,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const RouteReturnPage(),
+                  ),
+                );
+              },
               label: const Text('Route Return')),
         ],
       ),
