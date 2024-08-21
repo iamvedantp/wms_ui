@@ -18,28 +18,31 @@ class TransferButtonPage extends StatelessWidget {
         children: [
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.camera_enhance),
+            icon: const Icon(
+              Icons.forklift,
+              size: 50,
+            ),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Transfer Item'),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.camera_enhance),
+            icon: const Icon(Icons.pallet, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Transfer Pallet'),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.camera_enhance),
+            icon: const Icon(Icons.local_shipping, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Replenishment'),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.camera_enhance),
+            icon: const Icon(Icons.camera_enhance, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Reverse Replenishment'),

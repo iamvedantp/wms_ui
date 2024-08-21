@@ -18,14 +18,14 @@ class RouteReturnPage extends StatelessWidget {
         children: [
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.camera_enhance),
+            icon: const Icon(Icons.camera_enhance, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Check-In Item'),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.camera_enhance),
+            icon: const Icon(Icons.camera_enhance, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Check-In Pallet'),

@@ -11,21 +11,21 @@ class CheckInButtonPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Check-in'),
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.orangeAccent,
       ),
       body: GridView.count(
         crossAxisCount: 2,
         children: [
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.camera_enhance),
+            icon: const Icon(Icons.warehouse, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Check-In Item'),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.camera_enhance),
+            icon: const Icon(Icons.pallet, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Check-In Pallet'),

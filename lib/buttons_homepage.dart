@@ -14,7 +14,7 @@ class ButtonsHomepage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Welcome'),
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.orangeAccent,
       ),
       body: GridView.count(
         crossAxisSpacing: 40,
@@ -24,14 +24,17 @@ class ButtonsHomepage extends StatelessWidget {
         children: [
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.inventory_outlined),
+            icon: const Icon(
+              Icons.inventory_outlined,
+              size: 50,
+            ),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Item Receipt'),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.warehouse),
+            icon: const Icon(Icons.warehouse, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
@@ -45,19 +48,19 @@ class ButtonsHomepage extends StatelessWidget {
           ),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const Icon(Icons.forklift),
+              icon: const Icon(Icons.forklift, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {},
               label: const Text('Pick Order')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const Icon(Icons.receipt),
+              icon: const Icon(Icons.receipt, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {},
               label: const Text('Cycle Count')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const Icon(Icons.content_paste_go_outlined),
+              icon: const Icon(Icons.content_paste_go_outlined, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -70,13 +73,13 @@ class ButtonsHomepage extends StatelessWidget {
               label: const Text('Transfer')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const Icon(Icons.add_shopping_cart),
+              icon: const Icon(Icons.add_shopping_cart, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {},
               label: const Text('Products')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const Icon(Icons.emoji_transportation),
+              icon: const Icon(Icons.emoji_transportation, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
