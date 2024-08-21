@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class TransferButtonPage extends StatelessWidget {
   const TransferButtonPage({super.key});
@@ -18,8 +19,8 @@ class TransferButtonPage extends StatelessWidget {
         children: [
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(
-              Icons.forklift,
+            icon: const FaIcon(
+              FontAwesomeIcons.a,
               size: 50,
             ),
             style: outlinedButtonStyle,
@@ -28,21 +29,21 @@ class TransferButtonPage extends StatelessWidget {
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.pallet, size: 50),
+            icon: const FaIcon(Icons.pallet, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Transfer Pallet'),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.local_shipping, size: 50),
+            icon: const FaIcon(Icons.local_shipping, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Replenishment'),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.camera_enhance, size: 50),
+            icon: const FaIcon(Icons.camera_enhance, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Reverse Replenishment'),

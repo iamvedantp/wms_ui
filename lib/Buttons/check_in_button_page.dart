@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CheckInButtonPage extends StatelessWidget {
   const CheckInButtonPage({super.key});
@@ -18,14 +19,14 @@ class CheckInButtonPage extends StatelessWidget {
         children: [
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.warehouse, size: 50),
+            icon: const FaIcon(Icons.warehouse, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Check-In Item'),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.pallet, size: 50),
+            icon: const FaIcon(Icons.pallet, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Check-In Pallet'),

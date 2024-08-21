@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class RouteReturnPage extends StatelessWidget {
   const RouteReturnPage({super.key});
@@ -18,14 +19,14 @@ class RouteReturnPage extends StatelessWidget {
         children: [
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.camera_enhance, size: 50),
+            icon: const FaIcon(Icons.camera_enhance, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Check-In Item'),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.camera_enhance, size: 50),
+            icon: const FaIcon(Icons.camera_enhance, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Check-In Pallet'),

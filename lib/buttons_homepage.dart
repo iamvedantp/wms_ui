@@ -2,6 +2,7 @@ import 'package:code_practice/Buttons/check_in_button_page.dart';
 import 'package:code_practice/Buttons/route_return_page.dart';
 import 'package:code_practice/Buttons/transfer_button_page.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ButtonsHomepage extends StatelessWidget {
   const ButtonsHomepage({super.key});
@@ -24,7 +25,7 @@ class ButtonsHomepage extends StatelessWidget {
         children: [
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(
+            icon: const FaIcon(
               Icons.inventory_outlined,
               size: 50,
             ),
@@ -34,7 +35,7 @@ class ButtonsHomepage extends StatelessWidget {
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const Icon(Icons.warehouse, size: 50),
+            icon: const FaIcon(Icons.warehouse, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
@@ -48,19 +49,19 @@ class ButtonsHomepage extends StatelessWidget {
           ),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const Icon(Icons.forklift, size: 50),
+              icon: const FaIcon(Icons.forklift, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {},
               label: const Text('Pick Order')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const Icon(Icons.receipt, size: 50),
+              icon: const FaIcon(Icons.construction_rounded, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {},
               label: const Text('Cycle Count')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const Icon(Icons.content_paste_go_outlined, size: 50),
+              icon: const FaIcon(Icons.content_paste_go_outlined, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -73,13 +74,13 @@ class ButtonsHomepage extends StatelessWidget {
               label: const Text('Transfer')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const Icon(Icons.add_shopping_cart, size: 50),
+              icon: const FaIcon(Icons.add_shopping_cart, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {},
               label: const Text('Products')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const Icon(Icons.emoji_transportation, size: 50),
+              icon: const FaIcon(Icons.emoji_transportation, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
