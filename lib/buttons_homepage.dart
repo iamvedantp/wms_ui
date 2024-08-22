@@ -16,6 +16,11 @@ class ButtonsHomepage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Welcome '),
         backgroundColor: Colors.orangeAccent,
+        actions: [
+          PopupMenuButton(
+            itemBuilder: (context) => [const PopupMenuItem(child: Text('One'))],
+          )
+        ],
       ),
       body: GridView.count(
         crossAxisSpacing: 40,
