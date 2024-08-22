@@ -11,10 +11,10 @@ class ButtonsHomepage extends StatelessWidget {
   Widget build(BuildContext context) {
     //Defined the button style once
     final ButtonStyle outlinedButtonStyle =
-        OutlinedButton.styleFrom(shape: const LinearBorder());
+        OutlinedButton.styleFrom(shape: const BeveledRectangleBorder());
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Welcome'),
+        title: const Text('Welcome '),
         backgroundColor: Colors.orangeAccent,
       ),
       body: GridView.count(
@@ -31,7 +31,7 @@ class ButtonsHomepage extends StatelessWidget {
             ),
             style: outlinedButtonStyle,
             onPressed: () {},
-            label: const Text('Item Receipt'),
+            label: const Text('Stock Transfer Orders'),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
@@ -45,20 +45,20 @@ class ButtonsHomepage extends StatelessWidget {
                 ),
               );
             },
-            label: const Text('Check In'),
+            label: const Text('Shipment Orders'),
           ),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
               icon: const FaIcon(Icons.forklift, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {},
-              label: const Text('Pick Order')),
+              label: const Text('Dispatch Orders')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
               icon: const FaIcon(Icons.construction_rounded, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {},
-              label: const Text('Cycle Count')),
+              label: const Text('ASN')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
               icon: const FaIcon(Icons.content_paste_go_outlined, size: 50),
@@ -71,13 +71,13 @@ class ButtonsHomepage extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text('Transfer')),
+              label: const Text('Consignments')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
               icon: const FaIcon(Icons.add_shopping_cart, size: 50),
               style: outlinedButtonStyle,
               onPressed: () {},
-              label: const Text('Products')),
+              label: const Text('Goods Receipt Notes')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
               icon: const FaIcon(Icons.emoji_transportation, size: 50),
@@ -90,7 +90,20 @@ class ButtonsHomepage extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text('Route Return')),
+              label: const Text('Picklists ')),
+          OutlinedButton.icon(
+              iconAlignment: IconAlignment.start,
+              icon: const FaIcon(Icons.emoji_transportation, size: 50),
+              style: outlinedButtonStyle,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const RouteReturnPage(),
+                  ),
+                );
+              },
+              label: const Text('Putaways ')),
         ],
       ),
     );
