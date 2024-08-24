@@ -18,12 +18,26 @@ class ButtonsHomepage extends StatelessWidget {
         backgroundColor: Colors.orangeAccent,
         actions: [
           DropdownButton(
-            items: List.empty(),
-            onChanged: (value) {},
+            value: "Operator",
+            items: const [
+              DropdownMenuItem(
+                value: "Operator",
+                child: Text('Operator'),
+              ),
+              DropdownMenuItem(
+                value: "Carrier",
+                child: Text('Carrier'),
+              ),
+            ],
+            onChanged: (value) {
+              Widget widget;
+              if (value == "Operator") {
+                widget = const ButtonsHomepage();
+              } else if (value == "Carrier") {
+                widget = const CheckInButtonPage();
+              }
+            },
           )
-          // PopupMenuButton(
-          //   itemBuilder: (context) => [const PopupMenuItem(child: Text('One'))],
-          // )
         ],
       ),
       body: GridView.count(
