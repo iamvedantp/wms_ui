@@ -1,3 +1,4 @@
+import 'package:code_practice/buttons_homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -6,31 +7,79 @@ class CheckInButtonPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //Defined the button style once
     final ButtonStyle outlinedButtonStyle =
-        OutlinedButton.styleFrom(shape: const LinearBorder());
+        OutlinedButton.styleFrom(shape: const BeveledRectangleBorder());
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Check-in'),
+        automaticallyImplyLeading: false, // Removes the back button
+        title: const Text('Welcome Carrier'),
         backgroundColor: Colors.orangeAccent,
+        actions: [
+          DropdownButton(
+            value: "Carrier",
+            items: const [
+              DropdownMenuItem(
+                value: "Operator",
+                child: Text('Operator'),
+              ),
+              DropdownMenuItem(
+                value: "Carrier",
+                child: Text('Carrier'),
+              ),
+            ],
+            onChanged: (value) {
+              if (value == "Operator") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ButtonsHomepage(),
+                  ),
+                );
+              } else if (value == "Carrier") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CheckInButtonPage(),
+                  ),
+                );
+              }
+            },
+          ),
+        ],
       ),
       body: GridView.count(
+        crossAxisSpacing: 40,
+        mainAxisSpacing: 20,
         crossAxisCount: 2,
+        padding: const EdgeInsets.all(10),
         children: [
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const FaIcon(Icons.warehouse, size: 50),
+            icon: const FaIcon(Icons.inventory_outlined, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
-            label: const Text('Check-In Item'),
+            label: const Text('Consignments'),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const FaIcon(Icons.pallet, size: 50),
+            icon: const FaIcon(Icons.description_outlined, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
-            label: const Text('Check-In Pallet'),
-          )
+            label: const Text('E Bill of Lading'),
+          ),
+          OutlinedButton.icon(
+              iconAlignment: IconAlignment.start,
+              icon: const FaIcon(Icons.local_shipping_outlined, size: 50),
+              style: outlinedButtonStyle,
+              onPressed: () {},
+              label: const Text('E-Way Bill')),
+          OutlinedButton.icon(
+              iconAlignment: IconAlignment.start,
+              icon: const FaIcon(Icons.receipt_long_outlined, size: 50),
+              style: outlinedButtonStyle,
+              onPressed: () {},
+              label: const Text('Proof of Delivery')),
         ],
       ),
     );
