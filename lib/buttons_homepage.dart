@@ -67,14 +67,7 @@ class ButtonsHomepage extends StatelessWidget {
             iconAlignment: IconAlignment.start,
             icon: const FaIcon(Icons.warehouse, size: 50),
             style: outlinedButtonStyle,
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const CheckInButtonPage(),
-                ),
-              );
-            },
+            onPressed: () {},
             label: const Text('Shipment Orders'),
           ),
           OutlinedButton.icon(
