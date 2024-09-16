@@ -9,12 +9,13 @@ class ButtonsHomepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //Defined the button style once
     final ButtonStyle outlinedButtonStyle =
         OutlinedButton.styleFrom(shape: const BeveledRectangleBorder());
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Welcome '),
+        automaticallyImplyLeading: false, // Removes the back button
+        title: const Text('Welcome Operator'),
         backgroundColor: Colors.orangeAccent,
         actions: [
           DropdownButton(
@@ -30,14 +31,23 @@ class ButtonsHomepage extends StatelessWidget {
               ),
             ],
             onChanged: (value) {
-              Widget widget;
               if (value == "Operator") {
-                widget = const ButtonsHomepage();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ButtonsHomepage(),
+                  ),
+                );
               } else if (value == "Carrier") {
-                widget = const CheckInButtonPage();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CheckInButtonPage(),
+                  ),
+                );
               }
             },
-          )
+          ),
         ],
       ),
       body: GridView.count(
@@ -48,10 +58,7 @@ class ButtonsHomepage extends StatelessWidget {
         children: [
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const FaIcon(
-              Icons.inventory_outlined,
-              size: 50,
-            ),
+            icon: const FaIcon(Icons.inventory_outlined, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {},
             label: const Text('Stock Transfer Orders'),
