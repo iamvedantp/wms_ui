@@ -1,3 +1,4 @@
+import 'package:code_practice/scanner.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -13,6 +14,17 @@ class TransferButtonPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Transfer Type'),
         backgroundColor: Colors.deepOrange,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.qr_code_scanner),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Scanner()),
+              );
+            },
+          )
+        ],
       ),
       body: GridView.count(
         crossAxisCount: 2,
