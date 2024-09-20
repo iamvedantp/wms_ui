@@ -1,6 +1,7 @@
 import 'package:code_practice/Buttons/check_in_button_page.dart';
 import 'package:code_practice/Buttons/route_return_page.dart';
 import 'package:code_practice/Buttons/transfer_button_page.dart';
+import 'package:code_practice/putaway_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -122,7 +123,7 @@ class ButtonsHomepage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const RouteReturnPage(),
+                    builder: (context) => const PutawayPage(),
                   ),
                 );
               },
