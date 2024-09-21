@@ -1,17 +1,30 @@
 import 'package:code_practice/Functions/Operator%20Functions/STO/sto_create.dart';
 import 'package:code_practice/Functions/Operator%20Functions/STO/sto_review.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class StockTransferOrderHome extends StatelessWidget {
+  const StockTransferOrderHome({super.key});
+
   @override
   Widget build(BuildContext context) {
+    final ButtonStyle outlinedButtonStyle = OutlinedButton.styleFrom(
+      side: const BorderSide(color: Colors.blue),
+      shape: const RoundedRectangleBorder(),
+    );
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Stock Transfer Orders'),
       ),
-      body: Column(
+      body: GridView.count(
+        crossAxisCount: 2, // Number of buttons per row
+        crossAxisSpacing: 20.0,
+        mainAxisSpacing: 20.0,
+        padding: const EdgeInsets.all(20),
         children: [
-          ElevatedButton(
+          OutlinedButton.icon(
+            style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
                 context,
@@ -19,9 +32,12 @@ class StockTransferOrderHome extends StatelessWidget {
                     builder: (context) => CreateStockTransferPage()),
               );
             },
-            child: const Text('Create Transfer'),
+            icon: const FaIcon(FontAwesomeIcons.plus,
+                size: 50), // Icon for 'Create Transfer'
+            label: const Text('Create Transfer'),
           ),
-          ElevatedButton(
+          OutlinedButton.icon(
+            style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
                 context,
@@ -29,14 +45,20 @@ class StockTransferOrderHome extends StatelessWidget {
                     builder: (context) => ReviewStockTransferPage()),
               );
             },
-            child: const Text('Review Transfers'),
+            icon: const FaIcon(FontAwesomeIcons.rectangleList,
+                size: 50), // Icon for 'Review Transfers'
+            label: const Text('Review Transfers'),
           ),
-          ElevatedButton(
+          OutlinedButton.icon(
+            style: outlinedButtonStyle,
             onPressed: () {
-              // Add cancel functionality
+              // Add cancel functionality here
             },
-            child: const Text('Cancel Transfer'),
+            icon: const FaIcon(FontAwesomeIcons.circleXmark,
+                size: 50), // Icon for 'Cancel Transfer'
+            label: const Text('Cancel Transfer'),
           ),
+          // You can add more buttons here as necessary
         ],
       ),
     );
