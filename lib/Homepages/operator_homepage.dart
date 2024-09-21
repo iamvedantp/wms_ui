@@ -1,3 +1,4 @@
+import 'package:code_practice/Functions/Operator%20Functions/STO/sto_home.dart';
 import 'package:code_practice/Homepages/carrier_homepage.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Picklists/picklists_function_page.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Consignments/consignments_fuction_page.dart';
@@ -61,7 +62,13 @@ class ButtonsHomepage extends StatelessWidget {
             iconAlignment: IconAlignment.start,
             icon: const FaIcon(Icons.inventory_outlined, size: 50),
             style: outlinedButtonStyle,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => StockTransferOrderHome()),
+              );
+            },
             label: const Text('Stock Transfer Orders'),
           ),
           OutlinedButton.icon(
