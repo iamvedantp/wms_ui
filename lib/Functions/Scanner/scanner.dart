@@ -53,14 +53,18 @@ class _ScannerState extends State<Scanner> {
                       : const Text('Scan a code'),
                 ),
                 ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-                      flashOn = !flashOn;
-                      controller?.toggleFlash();
-                    });
-                  },
-                  child: Text(flashOn ? 'Turn Flash Off' : 'Turn Flash On'),
-                ),
+                    onPressed: () {
+                      setState(() {
+                        flashOn = !flashOn;
+                        controller?.toggleFlash();
+                      });
+                    },
+                    child: Icon(
+                      flashOn ? Icons.flash_on : Icons.flash_off,
+                      size: 30,
+                    )
+                    // Text(flashOn ? 'Turn Flash Off' : 'Turn Flash On'),
+                    ),
               ],
             ),
           ),
