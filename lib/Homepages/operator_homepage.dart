@@ -1,5 +1,6 @@
 import 'package:code_practice/Functions/Operator%20Functions/ASN/asn_home.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Dispatch%20Orders/dispatchordershome.dart';
+import 'package:code_practice/Functions/Operator%20Functions/Goods%20Receipt%20Notes/goods_receipt_notes_home.dart';
 import 'package:code_practice/Functions/Operator%20Functions/STO/sto_home.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Shipment%20Orders/shipmentordershome.dart';
 import 'package:code_practice/Homepages/carrier_homepage.dart';
@@ -125,7 +126,13 @@ class ButtonsHomepage extends StatelessWidget {
               iconAlignment: IconAlignment.start,
               icon: const FaIcon(Icons.add_shopping_cart, size: 50),
               style: outlinedButtonStyle,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => GoodsReceiptNotesHome()),
+                );
+              },
               label: const Text('Goods Receipt Notes')),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
