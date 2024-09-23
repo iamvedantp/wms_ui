@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DispatchReviewPage extends StatefulWidget {
+  const DispatchReviewPage({super.key});
+
   @override
   _DispatchReviewPageState createState() => _DispatchReviewPageState();
 }

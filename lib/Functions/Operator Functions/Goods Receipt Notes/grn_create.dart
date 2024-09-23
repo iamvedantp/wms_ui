@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 
-class ASNCreatePage extends StatelessWidget {
-  const ASNCreatePage({super.key});
-
+class GRNCreatePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Create ASN'),
-        backgroundColor: Colors.orangeAccent,
+        title: const Text('Create GRN'),
+        backgroundColor: Colors.greenAccent,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -16,13 +14,13 @@ class ASNCreatePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Fill in ASN details:',
+              'Fill in GRN details:',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 20),
             TextFormField(
               decoration: const InputDecoration(
-                labelText: 'ASN Number',
+                labelText: 'GRN Number',
                 border: OutlineInputBorder(),
               ),
             ),
@@ -36,7 +34,14 @@ class ASNCreatePage extends StatelessWidget {
             const SizedBox(height: 20),
             TextFormField(
               decoration: const InputDecoration(
-                labelText: 'Expected Delivery Date',
+                labelText: 'Quantity Received',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 20),
+            TextFormField(
+              decoration: const InputDecoration(
+                labelText: 'Quality Check',
                 border: OutlineInputBorder(),
               ),
             ),
@@ -44,9 +49,9 @@ class ASNCreatePage extends StatelessWidget {
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  // Implement save logic
+                  // Implement GRN creation logic
                 },
-                child: const Text('Save ASN'),
+                child: const Text('Save GRN'),
               ),
             ),
           ],

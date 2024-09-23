@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DispatchCreatePage extends StatefulWidget {
+  const DispatchCreatePage({super.key});
+
   @override
   _DispatchCreatePageState createState() => _DispatchCreatePageState();
 }

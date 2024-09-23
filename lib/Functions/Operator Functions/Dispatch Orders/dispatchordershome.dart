@@ -30,7 +30,7 @@ class DispatchOrdersHome extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => DispatchCreatePage(),
+                    builder: (context) => const DispatchCreatePage(),
                   ),
                 );
               },
@@ -44,7 +44,7 @@ class DispatchOrdersHome extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => DispatchReviewPage(),
+                    builder: (context) => const DispatchReviewPage(),
                   ),
                 );
               },
