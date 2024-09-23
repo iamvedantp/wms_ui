@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ASNReviewPage extends StatelessWidget {
+  const ASNReviewPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +18,8 @@ class ASNReviewPage extends StatelessWidget {
             elevation: 4,
             margin: const EdgeInsets.symmetric(vertical: 8),
             child: ListTile(
-              leading: Icon(Icons.description, color: Colors.orangeAccent),
+              leading:
+                  const Icon(Icons.description, color: Colors.orangeAccent),
               title: Text('ASN Number #${index + 1}'),
               subtitle: Text('Supplier: Supplier Name ${index + 1}'),
               trailing: IconButton(

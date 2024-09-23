@@ -16,7 +16,7 @@ class GRNReviewPage extends StatelessWidget {
             elevation: 4,
             margin: const EdgeInsets.symmetric(vertical: 8),
             child: ListTile(
-              leading: Icon(Icons.description, color: Colors.greenAccent),
+              leading: const Icon(Icons.description, color: Colors.greenAccent),
               title: Text('GRN Number #${index + 1}'),
               subtitle: Text('Supplier: Supplier Name ${index + 1}'),
               trailing: IconButton(

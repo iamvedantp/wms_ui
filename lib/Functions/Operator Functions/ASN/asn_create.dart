@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ASNCreatePage extends StatelessWidget {
+  const ASNCreatePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
