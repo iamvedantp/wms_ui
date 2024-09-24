@@ -5,7 +5,7 @@ import 'package:code_practice/Functions/Operator%20Functions/STO/sto_home.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Shipment%20Orders/shipmentordershome.dart';
 import 'package:code_practice/Homepages/carrier_homepage.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Picklists/picklists_function_page.dart';
-import 'package:code_practice/Functions/Operator%20Functions/Consignments/consignments_fuction_page.dart';
+import 'package:code_practice/Functions/Operator%20Functions/Consignments/consignments_home_page.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Putaway/putaway_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
