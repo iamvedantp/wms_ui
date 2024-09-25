@@ -1,3 +1,5 @@
+import 'package:code_practice/Functions/Operator%20Functions/Putaway/putaway_item.dart';
+import 'package:code_practice/Functions/Operator%20Functions/Putaway/putaway_pallet.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:code_practice/Functions/Scanner/scanner.dart';
@@ -34,7 +36,11 @@ class PutawayPage extends StatelessWidget {
             icon: const FaIcon(Icons.inventory_2, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {
-              // Navigate to Putaway Item page
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const PutawayItemPage()),
+              );
             },
             label: const Text('Putaway Item'),
           ),
@@ -43,7 +49,11 @@ class PutawayPage extends StatelessWidget {
             icon: const FaIcon(Icons.local_shipping, size: 50),
             style: outlinedButtonStyle,
             onPressed: () {
-              // Navigate to Putaway Pallet page
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const PutawayPalletPage()),
+              );
             },
             label: const Text('Putaway Pallet'),
           ),
