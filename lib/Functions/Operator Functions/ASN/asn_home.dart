@@ -16,7 +16,7 @@ class ASNHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('ASN (Advanced Shipping Notice)'),
-        backgroundColor: Colors.orangeAccent,
+        backgroundColor: Colors.grey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
