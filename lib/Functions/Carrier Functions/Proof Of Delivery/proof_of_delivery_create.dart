@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CreateProofOfDeliveryPage extends StatelessWidget {
+  const CreateProofOfDeliveryPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,14 +14,14 @@ class CreateProofOfDeliveryPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            TextField(
-              decoration: const InputDecoration(labelText: 'Delivery ID'),
+            const TextField(
+              decoration: InputDecoration(labelText: 'Delivery ID'),
             ),
-            TextField(
-              decoration: const InputDecoration(labelText: 'Receiver Name'),
+            const TextField(
+              decoration: InputDecoration(labelText: 'Receiver Name'),
             ),
-            TextField(
-              decoration: const InputDecoration(labelText: 'Delivery Note'),
+            const TextField(
+              decoration: InputDecoration(labelText: 'Delivery Note'),
             ),
             ElevatedButton(
               onPressed: () {

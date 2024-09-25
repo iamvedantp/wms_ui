@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ReviewProofOfDeliveryPage extends StatelessWidget {
+  const ReviewProofOfDeliveryPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

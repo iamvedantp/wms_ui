@@ -3,11 +3,13 @@ import 'package:code_practice/Functions/Carrier%20Functions/E-Bill%20of%20Lading
 import 'package:flutter/material.dart';
 
 class EBOLHome extends StatelessWidget {
+  const EBOLHome({super.key});
+
   @override
   Widget build(BuildContext context) {
     final ButtonStyle outlinedButtonStyle = OutlinedButton.styleFrom(
-      shape: BeveledRectangleBorder(),
-      padding: EdgeInsets.symmetric(vertical: 20),
+      shape: const BeveledRectangleBorder(),
+      padding: const EdgeInsets.symmetric(vertical: 20),
     );
 
     return Scaffold(
@@ -28,7 +30,7 @@ class EBOLHome extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => CreateEBillOfLadingPage(),
+                  builder: (context) => const CreateEBillOfLadingPage(),
                 ),
               );
             },
@@ -41,7 +43,7 @@ class EBOLHome extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ReviewEBillOfLadingPage(),
+                  builder: (context) => const ReviewEBillOfLadingPage(),
                 ),
               );
             },

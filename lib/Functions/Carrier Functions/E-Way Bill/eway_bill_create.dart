@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CreateEWayBillPage extends StatelessWidget {
+  const CreateEWayBillPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,16 +14,16 @@ class CreateEWayBillPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            TextField(
+            const TextField(
               decoration: InputDecoration(labelText: 'Consignor Name'),
             ),
-            TextField(
+            const TextField(
               decoration: InputDecoration(labelText: 'Consignee Name'),
             ),
-            TextField(
+            const TextField(
               decoration: InputDecoration(labelText: 'Transport Details'),
             ),
-            TextField(
+            const TextField(
               decoration: InputDecoration(labelText: 'Product Information'),
             ),
             // Add more fields as required

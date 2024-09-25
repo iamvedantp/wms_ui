@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ReviewEBillOfLadingPage extends StatelessWidget {
+  const ReviewEBillOfLadingPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,7 +16,7 @@ class ReviewEBillOfLadingPage extends StatelessWidget {
           return ListTile(
             title: Text('E Bill of Lading #$index'),
             subtitle: Text('Consignee Name $index'),
-            trailing: Icon(Icons.chevron_right),
+            trailing: const Icon(Icons.chevron_right),
             onTap: () {
               // Handle navigation to details page
             },
