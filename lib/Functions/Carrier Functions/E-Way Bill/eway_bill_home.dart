@@ -3,10 +3,12 @@ import 'package:code_practice/Functions/Carrier%20Functions/E-Way%20Bill/eway_bi
 import 'package:flutter/material.dart';
 
 class EWayBillHome extends StatelessWidget {
+  const EWayBillHome({super.key});
+
   @override
   Widget build(BuildContext context) {
     final ButtonStyle outlinedButtonStyle = OutlinedButton.styleFrom(
-      shape: BeveledRectangleBorder(),
+      shape: const BeveledRectangleBorder(),
       padding: const EdgeInsets.symmetric(vertical: 20),
     );
 
@@ -28,7 +30,7 @@ class EWayBillHome extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => CreateEWayBillPage(),
+                  builder: (context) => const CreateEWayBillPage(),
                 ),
               );
             },
@@ -41,7 +43,7 @@ class EWayBillHome extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ReviewEWayBillPage(),
+                  builder: (context) => const ReviewEWayBillPage(),
                 ),
               );
             },
