@@ -3,6 +3,8 @@ import 'package:code_practice/Functions/Operator%20Functions/Shipment%20Orders/s
 import 'package:flutter/material.dart';
 
 class ShipmentOrdersHome extends StatelessWidget {
+  const ShipmentOrdersHome({super.key});
+
   @override
   Widget build(BuildContext context) {
     final ButtonStyle outlinedButtonStyle = OutlinedButton.styleFrom(
@@ -12,6 +14,7 @@ class ShipmentOrdersHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Shipment Orders'),
+        backgroundColor: Colors.grey,
       ),
       body: GridView.count(
         crossAxisCount: 2,

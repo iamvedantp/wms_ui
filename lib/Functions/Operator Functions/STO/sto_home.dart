@@ -9,13 +9,13 @@ class StockTransferOrderHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ButtonStyle outlinedButtonStyle = OutlinedButton.styleFrom(
-      side: const BorderSide(color: Colors.blue),
       shape: const RoundedRectangleBorder(),
     );
 
     return Scaffold(
       appBar: AppBar(
         title: const Text('Stock Transfer Orders'),
+        backgroundColor: Colors.grey,
       ),
       body: GridView.count(
         crossAxisCount: 2, // Number of buttons per row

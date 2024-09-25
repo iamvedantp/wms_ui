@@ -3,12 +3,14 @@ import 'package:code_practice/Functions/Operator%20Functions/Goods%20Receipt%20N
 import 'package:flutter/material.dart';
 
 class GoodsReceiptNotesHome extends StatelessWidget {
+  const GoodsReceiptNotesHome({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Goods Receipt Notes'),
-        backgroundColor: Colors.tealAccent,
+        backgroundColor: Colors.grey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -18,10 +20,12 @@ class GoodsReceiptNotesHome extends StatelessWidget {
           mainAxisSpacing: 20,
           children: [
             OutlinedButton.icon(
-              icon: const Icon(Icons.add, size: 50, color: Colors.teal),
+              icon: const Icon(
+                Icons.add,
+                size: 50,
+              ),
               style: OutlinedButton.styleFrom(
                 shape: const BeveledRectangleBorder(),
-                side: const BorderSide(color: Colors.teal),
               ),
               onPressed: () {
                 Navigator.push(
@@ -32,10 +36,9 @@ class GoodsReceiptNotesHome extends StatelessWidget {
               label: const Text('Create GRN'),
             ),
             OutlinedButton.icon(
-              icon: const Icon(Icons.list, size: 50, color: Colors.teal),
+              icon: const Icon(Icons.list, size: 50),
               style: OutlinedButton.styleFrom(
                 shape: const BeveledRectangleBorder(),
-                side: const BorderSide(color: Colors.teal),
               ),
               onPressed: () {
                 Navigator.push(
@@ -46,10 +49,9 @@ class GoodsReceiptNotesHome extends StatelessWidget {
               label: const Text('Review GRN'),
             ),
             OutlinedButton.icon(
-              icon: const Icon(Icons.cancel, size: 50, color: Colors.teal),
+              icon: const Icon(Icons.cancel, size: 50),
               style: OutlinedButton.styleFrom(
                 shape: const BeveledRectangleBorder(),
-                side: const BorderSide(color: Colors.teal),
               ),
               onPressed: () {
                 // Implement Cancel GRN functionality

@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DispatchOrdersHome extends StatelessWidget {
+  const DispatchOrdersHome({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Define the button style once
@@ -14,7 +16,7 @@ class DispatchOrdersHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Dispatch Orders'),
-        backgroundColor: Colors.orangeAccent,
+        backgroundColor: Colors.grey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
