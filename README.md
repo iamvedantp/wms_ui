@@ -1,21 +1,25 @@
 # Code Practice - WMS App
 
-This Flutter project is designed to replicate key functionalities for a Warehouse Management System (WMS) app. It includes screens for operations such as stock transfer, dispatch orders, and consignment management, and offers different views for operators and carriers.
-![image](https://github.com/user-attachments/assets/043e6db1-3287-4235-a1f7-1b03a021a37b)
-
+This Flutter project is designed to replicate key functionalities for a Warehouse Management System (WMS) app. It includes screens for operations such as stock transfer, dispatch orders, consignment management, and offers different views for operators and carriers.
 
 ## Features
 
 - **Role-based views**: Operators and Carriers have distinct access to specific features via a dropdown menu in the app bar.
-- **Operations Overview**: A homepage displaying several key WMS functions, such as Stock Transfer, Shipment Orders, Dispatch Orders, ASN, Consignments, and more.
+- **Operations Overview**: A homepage displaying several key WMS functions, such as Stock Transfer, Shipment Orders, Dispatch Orders, ASN, Consignments, Picklists, Putaways, and more.
 - **Check-in Page**: Designed specifically for carriers to manage consignments, e-bills, e-way bills, and proof of delivery.
-- **Responsive UI**: Grid-based UI with outlined buttons and font-awesome icons for intuitive navigation.
+- **Putaway Management**: A separate page for managing putaway operations, including "Putaway Item" and "Putaway Pallet" options.
+- **Picklist Functionality**: Includes pages for managing picklist operations like Check-In Item and Check-In Pallet.
+- **Responsive UI**: Grid-based UI with outlined buttons and Font Awesome icons for intuitive navigation.
 
 ## Recent Updates
 
 - **Dropdown Role Switching**: A dropdown in the app bar allows seamless switching between `Operator` and `Carrier` roles.
 - **Consistent Design**: The `Check-in` page now follows the same grid-based design as the main operations homepage, with role-specific functionalities.
 - **Back Button Removal**: The `Check-in` page no longer has a back button for better user navigation and focus.
+- **Transfer Button Page**: Added multiple transfer options, such as Transfer Item, Transfer Pallet, Replenishment, and Reverse Replenishment, providing a more streamlined operator experience.
+- **Icons & Font Color**: Updated all button icons and text to black for better readability and uniformity across the app.
+- **Putaway Page**: Added pages for Putaway management, including Putaway Item and Putaway Pallet, accessible from the Operator homepage.
+- **Picklist Management**: A dedicated page for Picklists now includes Check-In Item and Check-In Pallet operations, improving the flow of picking operations.
 
 ## Getting Started
 
@@ -31,7 +35,3 @@ Here are a few resources to get you started if this is your first Flutter projec
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
 To get started with Flutter development, view the [online documentation](https://docs.flutter.dev/), which offers tutorials, samples, and guidance on mobile development.
-
----
-
-Feel free to adjust or add any additional information!
