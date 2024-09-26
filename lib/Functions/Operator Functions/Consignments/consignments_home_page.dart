@@ -28,6 +28,7 @@ class TransferButtonPage extends StatelessWidget {
               icon: const FaIcon(
                 FontAwesomeIcons.a,
                 size: 50,
+                color: Colors.black,
               ),
               style: outlinedButtonStyle,
               onPressed: () {
@@ -37,11 +38,18 @@ class TransferButtonPage extends StatelessWidget {
                       builder: (context) => const TransferItemPage()),
                 );
               },
-              label: const Text('Transfer Item'),
+              label: const Text(
+                'Transfer Item',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
             OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.pallet, size: 50),
+              icon: const FaIcon(
+                Icons.pallet,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -50,11 +58,18 @@ class TransferButtonPage extends StatelessWidget {
                       builder: (context) => const TransferPalletPage()),
                 );
               },
-              label: const Text('Transfer Pallet'),
+              label: const Text(
+                'Transfer Pallet',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
             OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.local_shipping, size: 50),
+              icon: const FaIcon(
+                Icons.local_shipping,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -63,11 +78,18 @@ class TransferButtonPage extends StatelessWidget {
                       builder: (context) => const ReplenishmentPage()),
                 );
               },
-              label: const Text('Replenishment'),
+              label: const Text(
+                'Replenishment',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
             OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.camera_enhance, size: 50),
+              icon: const FaIcon(
+                Icons.camera_enhance,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -76,7 +98,10 @@ class TransferButtonPage extends StatelessWidget {
                       builder: (context) => const ReverseReplenishmentPage()),
                 );
               },
-              label: const Text('Reverse Replenishment'),
+              label: const Text(
+                'Reverse Replenishment',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

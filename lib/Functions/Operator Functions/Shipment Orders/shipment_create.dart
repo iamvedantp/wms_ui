@@ -70,7 +70,10 @@ class _ShipmentCreatePageState extends State<ShipmentCreatePage> {
                     );
                   }
                 },
-                child: const Text('Create Shipment'),
+                child: const Text(
+                  'Create Shipment',
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
             ],
           ),

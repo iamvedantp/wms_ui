@@ -72,7 +72,10 @@ class _DispatchCreatePageState extends State<DispatchCreatePage> {
                     );
                   }
                 },
-                child: const Text('Create Dispatch'),
+                child: const Text(
+                  'Create Dispatch',
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
             ],
           ),

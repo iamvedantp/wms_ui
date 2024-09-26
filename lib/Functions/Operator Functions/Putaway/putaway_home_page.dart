@@ -25,7 +25,11 @@ class PutawayPage extends StatelessWidget {
           children: [
             OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.inventory_2, size: 50),
+              icon: const FaIcon(
+                Icons.inventory_2,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -34,11 +38,18 @@ class PutawayPage extends StatelessWidget {
                       builder: (context) => const PutawayItemPage()),
                 );
               },
-              label: const Text('Putaway Item'),
+              label: const Text(
+                'Putaway Item',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
             OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.local_shipping, size: 50),
+              icon: const FaIcon(
+                Icons.local_shipping,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -47,7 +58,10 @@ class PutawayPage extends StatelessWidget {
                       builder: (context) => const PutawayPalletPage()),
                 );
               },
-              label: const Text('Putaway Pallet'),
+              label: const Text(
+                'Putaway Pallet',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

@@ -9,7 +9,9 @@ class CreateStockTransferPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Create Stock Transfer'),
+        title: const Text(
+          'Create Stock Transfer',
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -32,7 +34,8 @@ class CreateStockTransferPage extends StatelessWidget {
               onPressed: () {
                 // Implement transfer creation logic
               },
-              child: const Text('Create Transfer'),
+              child: const Text('Create Transfer',
+                  style: TextStyle(color: Colors.black)),
             ),
           ],
         ),

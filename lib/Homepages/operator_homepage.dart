@@ -64,7 +64,11 @@ class ButtonsHomepage extends StatelessWidget {
         children: [
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const FaIcon(Icons.inventory_outlined, size: 50),
+            icon: const FaIcon(
+              Icons.inventory_outlined,
+              size: 50,
+              color: Colors.black,
+            ),
             style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
@@ -73,45 +77,75 @@ class ButtonsHomepage extends StatelessWidget {
                     builder: (context) => const StockTransferOrderHome()),
               );
             },
-            label: const Text('Stock Transfer Orders'),
+            label: const Text(
+              'Stock Transfer Orders',
+              style: TextStyle(color: Colors.black),
+            ),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const FaIcon(Icons.warehouse, size: 50),
+            icon: const FaIcon(
+              Icons.warehouse,
+              size: 50,
+              color: Colors.black,
+            ),
             style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ShipmentOrdersHome()),
+                MaterialPageRoute(
+                    builder: (context) => const ShipmentOrdersHome()),
               );
             },
-            label: const Text('Shipment Orders'),
+            label: const Text(
+              'Shipment Orders',
+              style: TextStyle(color: Colors.black),
+            ),
           ),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.forklift, size: 50),
+              icon: const FaIcon(
+                Icons.forklift,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => DispatchOrdersHome()),
+                  MaterialPageRoute(
+                      builder: (context) => const DispatchOrdersHome()),
                 );
               },
-              label: const Text('Dispatch Orders')),
+              label: const Text(
+                'Dispatch Orders',
+                style: TextStyle(color: Colors.black),
+              )),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.construction_rounded, size: 50),
+              icon: const FaIcon(
+                Icons.construction_rounded,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ASNHome()),
+                  MaterialPageRoute(builder: (context) => const ASNHome()),
                 );
               },
-              label: const Text('ASN')),
+              label: const Text(
+                'ASN',
+                style: TextStyle(color: Colors.black),
+              )),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.content_paste_go_outlined, size: 50),
+              icon: const FaIcon(
+                Icons.content_paste_go_outlined,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -121,22 +155,36 @@ class ButtonsHomepage extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text('Consignments')),
+              label: const Text(
+                'Consignments',
+                style: TextStyle(color: Colors.black),
+              )),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.add_shopping_cart, size: 50),
+              icon: const FaIcon(
+                Icons.add_shopping_cart,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => GoodsReceiptNotesHome()),
+                      builder: (context) => const GoodsReceiptNotesHome()),
                 );
               },
-              label: const Text('Goods Receipt Notes')),
+              label: const Text(
+                'Goods Receipt Notes',
+                style: TextStyle(color: Colors.black),
+              )),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.emoji_transportation, size: 50),
+              icon: const FaIcon(
+                Icons.emoji_transportation,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -146,10 +194,17 @@ class ButtonsHomepage extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text('Picklists ')),
+              label: const Text(
+                'Picklists',
+                style: TextStyle(color: Colors.black),
+              )),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.emoji_transportation, size: 50),
+              icon: const FaIcon(
+                Icons.emoji_transportation,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -159,7 +214,10 @@ class ButtonsHomepage extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text('Putaways ')),
+              label: const Text(
+                'Putaways',
+                style: TextStyle(color: Colors.black),
+              )),
         ],
       ),
     );

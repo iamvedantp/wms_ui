@@ -60,7 +60,11 @@ class CheckInButtonPage extends StatelessWidget {
         children: [
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const FaIcon(Icons.inventory_outlined, size: 50),
+            icon: const FaIcon(
+              Icons.inventory_outlined,
+              size: 50,
+              color: Colors.black,
+            ),
             style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
@@ -69,43 +73,67 @@ class CheckInButtonPage extends StatelessWidget {
                     builder: (context) => const TransferButtonPage()),
               );
             },
-            label: const Text('Consignments'),
+            label: const Text(
+              'Consignments',
+              style: TextStyle(color: Colors.black),
+            ),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
-            icon: const FaIcon(Icons.description_outlined, size: 50),
+            icon: const FaIcon(
+              Icons.description_outlined,
+              size: 50,
+              color: Colors.black,
+            ),
             style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => EBOLHome()),
+                MaterialPageRoute(builder: (context) => const EBOLHome()),
               );
             },
-            label: const Text('E Bill of Lading'),
+            label: const Text(
+              'E Bill of Lading',
+              style: TextStyle(color: Colors.black),
+            ),
           ),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.local_shipping_outlined, size: 50),
+              icon: const FaIcon(
+                Icons.local_shipping_outlined,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => EWayBillHome()),
+                  MaterialPageRoute(builder: (context) => const EWayBillHome()),
                 );
               },
-              label: const Text('E-Way Bill')),
+              label: const Text(
+                'E-Way Bill',
+                style: TextStyle(color: Colors.black),
+              )),
           OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.receipt_long_outlined, size: 50),
+              icon: const FaIcon(
+                Icons.receipt_long_outlined,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => ProofOfDeliveryHome()),
+                      builder: (context) => const ProofOfDeliveryHome()),
                 );
               },
-              label: const Text('Proof of Delivery')),
+              label: const Text(
+                'Proof of Delivery',
+                style: TextStyle(color: Colors.black),
+              )),
         ],
       ),
     );

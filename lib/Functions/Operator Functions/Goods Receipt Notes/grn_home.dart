@@ -23,6 +23,7 @@ class GoodsReceiptNotesHome extends StatelessWidget {
               icon: const Icon(
                 Icons.add,
                 size: 50,
+                color: Colors.black,
               ),
               style: OutlinedButton.styleFrom(
                 shape: const BeveledRectangleBorder(),
@@ -33,10 +34,17 @@ class GoodsReceiptNotesHome extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => GRNCreatePage()),
                 );
               },
-              label: const Text('Create GRN'),
+              label: const Text(
+                'Create GRN',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
             OutlinedButton.icon(
-              icon: const Icon(Icons.list, size: 50),
+              icon: const Icon(
+                Icons.list,
+                size: 50,
+                color: Colors.black,
+              ),
               style: OutlinedButton.styleFrom(
                 shape: const BeveledRectangleBorder(),
               ),
@@ -46,17 +54,27 @@ class GoodsReceiptNotesHome extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => GRNReviewPage()),
                 );
               },
-              label: const Text('Review GRN'),
+              label: const Text(
+                'Review GRN',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
             OutlinedButton.icon(
-              icon: const Icon(Icons.cancel, size: 50),
+              icon: const Icon(
+                Icons.cancel,
+                size: 50,
+                color: Colors.black,
+              ),
               style: OutlinedButton.styleFrom(
                 shape: const BeveledRectangleBorder(),
               ),
               onPressed: () {
                 // Implement Cancel GRN functionality
               },
-              label: const Text('Cancel GRN'),
+              label: const Text(
+                'Cancel GRN',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

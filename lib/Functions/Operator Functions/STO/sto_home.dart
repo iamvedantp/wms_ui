@@ -32,9 +32,15 @@ class StockTransferOrderHome extends StatelessWidget {
                     builder: (context) => CreateStockTransferPage()),
               );
             },
-            icon: const FaIcon(FontAwesomeIcons.plus,
-                size: 50), // Icon for 'Create Transfer'
-            label: const Text('Create Transfer'),
+            icon: const FaIcon(
+              FontAwesomeIcons.plus,
+              size: 50,
+              color: Colors.black,
+            ), // Icon for 'Create Transfer'
+            label: const Text(
+              'Create Transfer',
+              style: TextStyle(color: Colors.black),
+            ),
           ),
           OutlinedButton.icon(
             style: outlinedButtonStyle,
@@ -45,18 +51,30 @@ class StockTransferOrderHome extends StatelessWidget {
                     builder: (context) => ReviewStockTransferPage()),
               );
             },
-            icon: const FaIcon(FontAwesomeIcons.rectangleList,
-                size: 50), // Icon for 'Review Transfers'
-            label: const Text('Review Transfers'),
+            icon: const FaIcon(
+              FontAwesomeIcons.rectangleList,
+              size: 50,
+              color: Colors.black,
+            ), // Icon for 'Review Transfers'
+            label: const Text(
+              'Review Transfers',
+              style: TextStyle(color: Colors.black),
+            ),
           ),
           OutlinedButton.icon(
             style: outlinedButtonStyle,
             onPressed: () {
               // Add cancel functionality here
             },
-            icon: const FaIcon(FontAwesomeIcons.circleXmark,
-                size: 50), // Icon for 'Cancel Transfer'
-            label: const Text('Cancel Transfer'),
+            icon: const FaIcon(
+              FontAwesomeIcons.circleXmark,
+              size: 50,
+              color: Colors.black,
+            ), // Icon for 'Cancel Transfer'
+            label: const Text(
+              'Cancel Transfer',
+              style: TextStyle(color: Colors.black),
+            ),
           ),
           // You can add more buttons here as necessary
         ],

@@ -8,7 +8,7 @@ class CheckInItemPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Check-In Item'),
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.grey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -48,7 +48,10 @@ class CheckInItemPage extends StatelessWidget {
               onPressed: () {
                 // Handle Check-In operation
               },
-              child: const Text('Check-In'),
+              child: const Text(
+                'Check-In',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

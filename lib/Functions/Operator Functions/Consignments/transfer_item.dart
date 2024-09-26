@@ -8,7 +8,7 @@ class TransferItemPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Transfer Item'),
-        backgroundColor: Colors.orange,
+        backgroundColor: Colors.grey,
       ),
       body: const Center(
         child: Text('Transfer Item Functionality'),

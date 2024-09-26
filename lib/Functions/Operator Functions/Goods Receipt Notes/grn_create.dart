@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class GRNCreatePage extends StatelessWidget {
+  const GRNCreatePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Create GRN'),
-        backgroundColor: Colors.greenAccent,
+        backgroundColor: Colors.grey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -51,7 +53,10 @@ class GRNCreatePage extends StatelessWidget {
                 onPressed: () {
                   // Implement GRN creation logic
                 },
-                child: const Text('Save GRN'),
+                child: const Text(
+                  'Save GRN',
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
             ),
           ],

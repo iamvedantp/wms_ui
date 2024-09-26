@@ -24,7 +24,11 @@ class ProofOfDeliveryHome extends StatelessWidget {
           mainAxisSpacing: 20,
           children: [
             OutlinedButton.icon(
-              icon: const Icon(Icons.create, size: 40),
+              icon: const Icon(
+                Icons.create,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -34,20 +38,30 @@ class ProofOfDeliveryHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text('Create POD'),
+              label: const Text(
+                'Create POD',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
             OutlinedButton.icon(
-              icon: const Icon(Icons.search, size: 40),
+              icon: const Icon(
+                Icons.search,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ReviewProofOfDeliveryPage(),
+                    builder: (context) => const ReviewProofOfDeliveryPage(),
                   ),
                 );
               },
-              label: const Text('Review POD'),
+              label: const Text(
+                'Review POD',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

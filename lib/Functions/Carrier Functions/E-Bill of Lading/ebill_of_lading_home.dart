@@ -24,7 +24,11 @@ class EBOLHome extends StatelessWidget {
           mainAxisSpacing: 20,
           children: [
             OutlinedButton.icon(
-              icon: const Icon(Icons.create, size: 40),
+              icon: const Icon(
+                Icons.create,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -34,10 +38,17 @@ class EBOLHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text('Create E-Bill of Lading'),
+              label: const Text(
+                'Create E-Bill of Lading',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
             OutlinedButton.icon(
-              icon: const Icon(Icons.search, size: 40),
+              icon: const Icon(
+                Icons.search,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -47,7 +58,10 @@ class EBOLHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text('Review E-Bill of Lading'),
+              label: const Text(
+                'Review E-Bill of Lading',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),
