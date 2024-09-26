@@ -6,11 +6,14 @@ class ReviewStockTransferPage extends StatelessWidget {
     {'id': '124', 'item': 'Item B', 'status': 'Completed'},
   ];
 
+  ReviewStockTransferPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Review Transfers'),
+        backgroundColor: Colors.blueGrey,
       ),
       body: ListView.builder(
         itemCount: transfers.length,

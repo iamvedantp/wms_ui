@@ -14,7 +14,7 @@ class EBOLHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('E-Bill of Lading'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

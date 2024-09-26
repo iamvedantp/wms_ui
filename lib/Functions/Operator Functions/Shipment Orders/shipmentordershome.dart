@@ -14,7 +14,7 @@ class ShipmentOrdersHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Shipment Orders'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
       ),
       body: GridView.count(
         crossAxisCount: 2,

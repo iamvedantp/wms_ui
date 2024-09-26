@@ -8,7 +8,7 @@ class PutawayItemPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Putaway Item'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

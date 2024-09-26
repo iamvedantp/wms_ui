@@ -14,7 +14,7 @@ class ProofOfDeliveryHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Proof of Delivery'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

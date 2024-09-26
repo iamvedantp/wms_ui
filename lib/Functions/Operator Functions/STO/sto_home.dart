@@ -15,7 +15,7 @@ class StockTransferOrderHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Stock Transfer Orders'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
       ),
       body: GridView.count(
         crossAxisCount: 2, // Number of buttons per row

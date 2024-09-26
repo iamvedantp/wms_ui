@@ -8,7 +8,7 @@ class ReverseReplenishmentPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Reverse Replenishment'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
       ),
       body: const Center(
         child: Text('Reverse Replenishment Functionality'),

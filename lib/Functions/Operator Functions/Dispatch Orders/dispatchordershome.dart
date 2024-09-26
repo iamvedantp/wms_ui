@@ -16,7 +16,7 @@ class DispatchOrdersHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Dispatch Orders'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
