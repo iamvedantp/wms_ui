@@ -22,7 +22,7 @@ class ButtonsHomepage extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false, // Removes the back button
         title: const Text('Welcome Operator'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
         actions: [
           DropdownButton(
             value: "Operator",

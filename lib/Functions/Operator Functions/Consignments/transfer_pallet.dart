@@ -8,7 +8,7 @@ class TransferPalletPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Transfer Pallet'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
       ),
       body: const Center(
         child: Text('Transfer Pallet Functionality'),

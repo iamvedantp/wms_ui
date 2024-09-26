@@ -12,6 +12,7 @@ class CreateStockTransferPage extends StatelessWidget {
         title: const Text(
           'Create Stock Transfer',
         ),
+        backgroundColor: Colors.blueGrey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

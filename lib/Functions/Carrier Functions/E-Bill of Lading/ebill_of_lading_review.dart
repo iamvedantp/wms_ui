@@ -8,7 +8,7 @@ class ReviewEBillOfLadingPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Review E Bill of Lading'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
       ),
       body: ListView.builder(
         itemCount: 10, // Replace with dynamic count

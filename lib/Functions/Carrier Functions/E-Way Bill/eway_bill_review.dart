@@ -8,7 +8,7 @@ class ReviewEWayBillPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Review E-Way Bill'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
       ),
       body: ListView.builder(
         itemCount: 10, // Replace with dynamic data

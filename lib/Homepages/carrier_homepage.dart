@@ -18,7 +18,7 @@ class CheckInButtonPage extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false, // Removes the back button
         title: const Text('Welcome Carrier'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
         actions: [
           DropdownButton(
             value: "Carrier",

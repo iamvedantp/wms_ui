@@ -23,6 +23,7 @@ class _ShipmentReviewPageState extends State<ShipmentReviewPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blueGrey,
         title: const Text('Review Shipments'),
       ),
       body: ListView.builder(

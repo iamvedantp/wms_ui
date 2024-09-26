@@ -15,7 +15,7 @@ class TransferButtonPage extends StatelessWidget {
         OutlinedButton.styleFrom(shape: const BeveledRectangleBorder());
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Transfer Type'), backgroundColor: Colors.grey),
+          title: const Text('Transfer Type'), backgroundColor: Colors.blueGrey),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: GridView.count(

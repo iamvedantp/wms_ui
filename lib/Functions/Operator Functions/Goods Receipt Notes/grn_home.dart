@@ -10,7 +10,7 @@ class GoodsReceiptNotesHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Goods Receipt Notes'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

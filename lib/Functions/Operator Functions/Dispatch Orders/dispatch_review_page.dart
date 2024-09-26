@@ -25,6 +25,7 @@ class _DispatchReviewPageState extends State<DispatchReviewPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blueGrey,
         title: const Text('Review Dispatch Orders'),
       ),
       body: ListView.builder(

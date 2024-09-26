@@ -16,6 +16,7 @@ class _ShipmentCreatePageState extends State<ShipmentCreatePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Create Shipment'),
+        backgroundColor: Colors.blueGrey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
