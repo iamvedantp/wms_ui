@@ -8,7 +8,7 @@ class PutawayItemPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Putaway Item'),
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.grey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -32,7 +32,10 @@ class PutawayItemPage extends StatelessWidget {
               onPressed: () {
                 // Logic for putting away the item
               },
-              child: const Text('Confirm Putaway'),
+              child: const Text(
+                'Confirm Putaway',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

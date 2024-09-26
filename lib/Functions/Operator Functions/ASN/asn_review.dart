@@ -8,7 +8,7 @@ class ASNReviewPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Review ASN'),
-        backgroundColor: Colors.orangeAccent,
+        backgroundColor: Colors.grey,
       ),
       body: ListView.builder(
         padding: const EdgeInsets.all(16.0),
@@ -18,8 +18,7 @@ class ASNReviewPage extends StatelessWidget {
             elevation: 4,
             margin: const EdgeInsets.symmetric(vertical: 8),
             child: ListTile(
-              leading:
-                  const Icon(Icons.description, color: Colors.orangeAccent),
+              leading: const Icon(Icons.description, color: Colors.grey),
               title: Text('ASN Number #${index + 1}'),
               subtitle: Text('Supplier: Supplier Name ${index + 1}'),
               trailing: IconButton(

@@ -23,7 +23,11 @@ class ShipmentOrdersHome extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         children: [
           OutlinedButton.icon(
-            icon: const Icon(Icons.local_shipping, size: 50),
+            icon: const Icon(
+              Icons.local_shipping,
+              size: 50,
+              color: Colors.black,
+            ),
             style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
@@ -31,10 +35,17 @@ class ShipmentOrdersHome extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => ShipmentCreatePage()),
               );
             },
-            label: const Text('Create Shipment'),
+            label: const Text(
+              'Create Shipment',
+              style: TextStyle(color: Colors.black),
+            ),
           ),
           OutlinedButton.icon(
-            icon: const Icon(Icons.search, size: 50),
+            icon: const Icon(
+              Icons.search,
+              size: 50,
+              color: Colors.black,
+            ),
             style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
@@ -42,15 +53,25 @@ class ShipmentOrdersHome extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => ShipmentReviewPage()),
               );
             },
-            label: const Text('Review Shipments'),
+            label: const Text(
+              'Review Shipments',
+              style: TextStyle(color: Colors.black),
+            ),
           ),
           OutlinedButton.icon(
-            icon: const Icon(Icons.cancel, size: 50),
+            icon: const Icon(
+              Icons.cancel,
+              size: 50,
+              color: Colors.black,
+            ),
             style: outlinedButtonStyle,
             onPressed: () {
               // Add functionality for cancel shipment
             },
-            label: const Text('Cancel Shipment'),
+            label: const Text(
+              'Cancel Shipment',
+              style: TextStyle(color: Colors.black),
+            ),
           ),
         ],
       ),

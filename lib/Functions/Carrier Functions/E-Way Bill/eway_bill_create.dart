@@ -8,7 +8,7 @@ class CreateEWayBillPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Create E-Way Bill'),
-        backgroundColor: Colors.orangeAccent,
+        backgroundColor: Colors.grey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -32,7 +32,10 @@ class CreateEWayBillPage extends StatelessWidget {
               onPressed: () {
                 // Handle save functionality
               },
-              child: const Text('Save E-Way Bill'),
+              child: const Text(
+                'Save E-Way Bill',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

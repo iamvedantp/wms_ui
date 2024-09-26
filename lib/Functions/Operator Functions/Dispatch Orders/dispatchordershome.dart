@@ -26,7 +26,11 @@ class DispatchOrdersHome extends StatelessWidget {
           mainAxisSpacing: 20,
           children: [
             OutlinedButton.icon(
-              icon: const FaIcon(Icons.add_circle_outline, size: 40),
+              icon: const FaIcon(
+                Icons.add_circle_outline,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -36,11 +40,15 @@ class DispatchOrdersHome extends StatelessWidget {
                   ),
                 );
               },
-              label:
-                  const Text('Create Dispatch', style: TextStyle(fontSize: 16)),
+              label: const Text('Create Dispatch',
+                  style: TextStyle(fontSize: 16, color: Colors.black)),
             ),
             OutlinedButton.icon(
-              icon: const FaIcon(Icons.search_outlined, size: 40),
+              icon: const FaIcon(
+                Icons.search_outlined,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -51,25 +59,33 @@ class DispatchOrdersHome extends StatelessWidget {
                 );
               },
               label: const Text('Review Dispatches',
-                  style: TextStyle(fontSize: 16)),
+                  style: TextStyle(fontSize: 16, color: Colors.black)),
             ),
             OutlinedButton.icon(
-              icon: const FaIcon(Icons.cancel_outlined, size: 40),
+              icon: const FaIcon(
+                Icons.cancel_outlined,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 // Add cancel functionality or navigation here
               },
-              label:
-                  const Text('Cancel Dispatch', style: TextStyle(fontSize: 16)),
+              label: const Text('Cancel Dispatch',
+                  style: TextStyle(fontSize: 16, color: Colors.black)),
             ),
             OutlinedButton.icon(
-              icon: const FaIcon(Icons.history_outlined, size: 40),
+              icon: const FaIcon(
+                Icons.history_outlined,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 // Handle viewing dispatch history or other functionalities
               },
               label: const Text('Dispatch History',
-                  style: TextStyle(fontSize: 16)),
+                  style: TextStyle(fontSize: 16, color: Colors.black)),
             ),
           ],
         ),

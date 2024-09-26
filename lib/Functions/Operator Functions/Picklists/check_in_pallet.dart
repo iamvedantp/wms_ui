@@ -8,7 +8,7 @@ class CheckInPalletPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Check-In Pallet'),
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.grey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -48,7 +48,10 @@ class CheckInPalletPage extends StatelessWidget {
               onPressed: () {
                 // Handle Check-In Pallet operation
               },
-              child: const Text('Check-In Pallet'),
+              child: const Text(
+                'Check-In Pallet',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

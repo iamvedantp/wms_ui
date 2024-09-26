@@ -8,7 +8,7 @@ class PutawayPalletPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Putaway Pallet'),
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.grey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -32,7 +32,10 @@ class PutawayPalletPage extends StatelessWidget {
               onPressed: () {
                 // Logic for putting away the pallet
               },
-              child: const Text('Confirm Putaway'),
+              child: const Text(
+                'Confirm Putaway',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

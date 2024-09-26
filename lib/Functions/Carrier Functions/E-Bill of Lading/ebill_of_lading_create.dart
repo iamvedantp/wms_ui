@@ -8,7 +8,7 @@ class CreateEBillOfLadingPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Create E Bill of Lading'),
-        backgroundColor: Colors.orangeAccent,
+        backgroundColor: Colors.grey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -29,7 +29,10 @@ class CreateEBillOfLadingPage extends StatelessWidget {
               onPressed: () {
                 // Handle save functionality
               },
-              child: const Text('Save E Bill of Lading'),
+              child: const Text(
+                'Save E Bill of Lading',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

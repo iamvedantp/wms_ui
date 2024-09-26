@@ -8,7 +8,7 @@ class ASNCreatePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Create ASN'),
-        backgroundColor: Colors.orangeAccent,
+        backgroundColor: Colors.grey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -46,7 +46,10 @@ class ASNCreatePage extends StatelessWidget {
                 onPressed: () {
                   // Implement save logic
                 },
-                child: const Text('Save ASN'),
+                child: const Text(
+                  'Save ASN',
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
             ),
           ],

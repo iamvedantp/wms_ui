@@ -24,7 +24,11 @@ class EWayBillHome extends StatelessWidget {
           mainAxisSpacing: 20,
           children: [
             OutlinedButton.icon(
-              icon: const Icon(Icons.create, size: 40),
+              icon: const Icon(
+                Icons.create,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -34,10 +38,17 @@ class EWayBillHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text('Create E-Way Bill'),
+              label: const Text(
+                'Create E-Way Bill',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
             OutlinedButton.icon(
-              icon: const Icon(Icons.search, size: 40),
+              icon: const Icon(
+                Icons.search,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -47,7 +58,10 @@ class EWayBillHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text('Review E-Way Bill'),
+              label: const Text(
+                'Review E-Way Bill',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

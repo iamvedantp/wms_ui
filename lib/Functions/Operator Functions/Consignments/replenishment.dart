@@ -8,7 +8,7 @@ class ReplenishmentPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Replenishment'),
-        backgroundColor: Colors.orange,
+        backgroundColor: Colors.grey,
       ),
       body: const Center(
         child: Text('Replenishment Functionality'),

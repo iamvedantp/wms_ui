@@ -25,7 +25,11 @@ class RouteReturnPage extends StatelessWidget {
           children: [
             OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.check_box_outlined, size: 50),
+              icon: const FaIcon(
+                Icons.check_box_outlined,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -34,19 +38,30 @@ class RouteReturnPage extends StatelessWidget {
                       builder: (context) => const CheckInItemPage()),
                 );
               },
-              label: const Text('Check-In Item'),
+              label: const Text(
+                'Check-In Item',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
             OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
-              icon: const FaIcon(Icons.account_balance_wallet, size: 50),
+              icon: const FaIcon(
+                Icons.account_balance_wallet,
+                size: 50,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => CheckInPalletPage()),
+                  MaterialPageRoute(
+                      builder: (context) => const CheckInPalletPage()),
                 );
               },
-              label: const Text('Check-In Pallet'),
+              label: const Text(
+                'Check-In Pallet',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

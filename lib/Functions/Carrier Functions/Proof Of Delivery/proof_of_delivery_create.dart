@@ -8,7 +8,7 @@ class CreateProofOfDeliveryPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Create Proof of Delivery'),
-        backgroundColor: Colors.orangeAccent,
+        backgroundColor: Colors.grey,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -27,14 +27,20 @@ class CreateProofOfDeliveryPage extends StatelessWidget {
               onPressed: () {
                 // Capture/upload image functionality (e.g., using image picker)
               },
-              child: const Text('Upload Image'),
+              child: const Text(
+                'Upload Image',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 // Handle save functionality
               },
-              child: const Text('Save Proof of Delivery'),
+              child: const Text(
+                'Save Proof of Delivery',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

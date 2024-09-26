@@ -26,7 +26,11 @@ class ASNHome extends StatelessWidget {
           mainAxisSpacing: 20,
           children: [
             OutlinedButton.icon(
-              icon: const FaIcon(Icons.add_box_outlined, size: 40),
+              icon: const FaIcon(
+                Icons.add_box_outlined,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -36,10 +40,15 @@ class ASNHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text('Create ASN', style: TextStyle(fontSize: 16)),
+              label: const Text('Create ASN',
+                  style: TextStyle(fontSize: 16, color: Colors.black)),
             ),
             OutlinedButton.icon(
-              icon: const FaIcon(Icons.receipt_outlined, size: 40),
+              icon: const FaIcon(
+                Icons.receipt_outlined,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 Navigator.push(
@@ -49,23 +58,31 @@ class ASNHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text('Review ASN', style: TextStyle(fontSize: 16)),
+              label: const Text('Review ASN',
+                  style: TextStyle(fontSize: 16, color: Colors.black)),
             ),
             OutlinedButton.icon(
-              icon: const FaIcon(Icons.cancel_outlined, size: 40),
+              icon: const FaIcon(
+                Icons.cancel_outlined,
+                size: 40,
+                color: Colors.black,
+              ),
               style: outlinedButtonStyle,
               onPressed: () {
                 // Add cancel functionality or navigation here
               },
-              label: const Text('Cancel ASN', style: TextStyle(fontSize: 16)),
+              label: const Text('Cancel ASN',
+                  style: TextStyle(fontSize: 16, color: Colors.black)),
             ),
             OutlinedButton.icon(
-              icon: const FaIcon(Icons.history_outlined, size: 40),
+              icon: const FaIcon(Icons.history_outlined,
+                  size: 40, color: Colors.black),
               style: outlinedButtonStyle,
               onPressed: () {
                 // Handle viewing ASN history or other functionalities
               },
-              label: const Text('ASN History', style: TextStyle(fontSize: 16)),
+              label: const Text('ASN History',
+                  style: TextStyle(fontSize: 16, color: Colors.black)),
             ),
           ],
         ),
