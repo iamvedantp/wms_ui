@@ -1,4 +1,4 @@
-# Code Practice - WMS App
+# WMS App Ui
 
 This Flutter project is designed to replicate key functionalities for a Warehouse Management System (WMS) app. It includes screens for operations such as stock transfer, dispatch orders, consignment management, and offers different views for operators and carriers.
 
