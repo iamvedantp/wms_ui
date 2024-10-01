@@ -45,6 +45,12 @@ dependencies:
   stack_trace: ^1.11.1
   test_api: ^0.7.2
   vm_service: ^14.2.5
+  flutter_native_splash: ^2.4.1
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/logos.png
+  android: true
 
 flutter_icons:
   android: true
