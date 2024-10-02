@@ -62,13 +62,7 @@ class ButtonsHomepage extends StatelessWidget {
         crossAxisCount: 2,
         padding: const EdgeInsets.all(10),
         children: [
-          OutlinedButton.icon(
-            iconAlignment: IconAlignment.start,
-            icon: const FaIcon(
-              Icons.inventory_outlined,
-              size: 50,
-              color: Colors.black,
-            ),
+          OutlinedButton(
             style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
@@ -77,18 +71,23 @@ class ButtonsHomepage extends StatelessWidget {
                     builder: (context) => const StockTransferOrderHome()),
               );
             },
-            label: const Text(
-              'Stock Transfer Orders',
-              style: TextStyle(color: Colors.black),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                FaIcon(
+                  Icons.inventory_outlined,
+                  size: 50,
+                  color: Colors.black,
+                ),
+                SizedBox(height: 10), // Space between icon and text
+                Text(
+                  'Stock Transfer Orders',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ],
             ),
           ),
-          OutlinedButton.icon(
-            iconAlignment: IconAlignment.start,
-            icon: const FaIcon(
-              Icons.warehouse,
-              size: 50,
-              color: Colors.black,
-            ),
+          OutlinedButton(
             style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
@@ -97,127 +96,174 @@ class ButtonsHomepage extends StatelessWidget {
                     builder: (context) => const ShipmentOrdersHome()),
               );
             },
-            label: const Text(
-              'Shipment Orders',
-              style: TextStyle(color: Colors.black),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                FaIcon(
+                  Icons.warehouse,
+                  size: 50,
+                  color: Colors.black,
+                ),
+                SizedBox(height: 10),
+                Text(
+                  'Shipment Orders',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ],
             ),
           ),
-          OutlinedButton.icon(
-              iconAlignment: IconAlignment.start,
-              icon: const FaIcon(
-                Icons.forklift,
-                size: 50,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const DispatchOrdersHome()),
-                );
-              },
-              label: const Text(
-                'Dispatch Orders',
-                style: TextStyle(color: Colors.black),
-              )),
-          OutlinedButton.icon(
-              iconAlignment: IconAlignment.start,
-              icon: const FaIcon(
-                Icons.construction_rounded,
-                size: 50,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const ASNHome()),
-                );
-              },
-              label: const Text(
-                'ASN',
-                style: TextStyle(color: Colors.black),
-              )),
-          OutlinedButton.icon(
-              iconAlignment: IconAlignment.start,
-              icon: const FaIcon(
-                Icons.content_paste_go_outlined,
-                size: 50,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const TransferButtonPage(),
-                  ),
-                );
-              },
-              label: const Text(
-                'Consignments',
-                style: TextStyle(color: Colors.black),
-              )),
-          OutlinedButton.icon(
-              iconAlignment: IconAlignment.start,
-              icon: const FaIcon(
-                Icons.add_shopping_cart,
-                size: 50,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const GoodsReceiptNotesHome()),
-                );
-              },
-              label: const Text(
-                'Goods Receipt Notes',
-                style: TextStyle(color: Colors.black),
-              )),
-          OutlinedButton.icon(
-              iconAlignment: IconAlignment.start,
-              icon: const FaIcon(
-                Icons.emoji_transportation,
-                size: 50,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const RouteReturnPage(),
-                  ),
-                );
-              },
-              label: const Text(
-                'Picklists',
-                style: TextStyle(color: Colors.black),
-              )),
-          OutlinedButton.icon(
-              iconAlignment: IconAlignment.start,
-              icon: const FaIcon(
-                Icons.emoji_transportation,
-                size: 50,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const PutawayPage(),
-                  ),
-                );
-              },
-              label: const Text(
-                'Putaways',
-                style: TextStyle(color: Colors.black),
-              )),
+          OutlinedButton(
+            style: outlinedButtonStyle,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const DispatchOrdersHome()),
+              );
+            },
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                FaIcon(
+                  Icons.forklift,
+                  size: 50,
+                  color: Colors.black,
+                ),
+                SizedBox(height: 10),
+                Text(
+                  'Dispatch Orders',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ],
+            ),
+          ),
+          OutlinedButton(
+            style: outlinedButtonStyle,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ASNHome()),
+              );
+            },
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                FaIcon(
+                  Icons.construction_rounded,
+                  size: 50,
+                  color: Colors.black,
+                ),
+                SizedBox(height: 10),
+                Text(
+                  'ASN',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ],
+            ),
+          ),
+          OutlinedButton(
+            style: outlinedButtonStyle,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const TransferButtonPage(),
+                ),
+              );
+            },
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                FaIcon(
+                  Icons.content_paste_go_outlined,
+                  size: 50,
+                  color: Colors.black,
+                ),
+                SizedBox(height: 10),
+                Text(
+                  'Consignments',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ],
+            ),
+          ),
+          OutlinedButton(
+            style: outlinedButtonStyle,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const GoodsReceiptNotesHome()),
+              );
+            },
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                FaIcon(
+                  Icons.add_shopping_cart,
+                  size: 50,
+                  color: Colors.black,
+                ),
+                SizedBox(height: 10),
+                Text(
+                  'Goods Receipt Notes',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ],
+            ),
+          ),
+          OutlinedButton(
+            style: outlinedButtonStyle,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const RouteReturnPage(),
+                ),
+              );
+            },
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                FaIcon(
+                  Icons.emoji_transportation,
+                  size: 50,
+                  color: Colors.black,
+                ),
+                SizedBox(height: 10),
+                Text(
+                  'Picklists',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ],
+            ),
+          ),
+          OutlinedButton(
+            style: outlinedButtonStyle,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const PutawayPage(),
+                ),
+              );
+            },
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                FaIcon(
+                  Icons.emoji_transportation,
+                  size: 50,
+                  color: Colors.black,
+                ),
+                SizedBox(height: 10),
+                Text(
+                  'Putaways',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

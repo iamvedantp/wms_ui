@@ -58,13 +58,7 @@ class CheckInButtonPage extends StatelessWidget {
         crossAxisCount: 2,
         padding: const EdgeInsets.all(10),
         children: [
-          OutlinedButton.icon(
-            iconAlignment: IconAlignment.start,
-            icon: const FaIcon(
-              Icons.inventory_outlined,
-              size: 50,
-              color: Colors.black,
-            ),
+          OutlinedButton(
             style: outlinedButtonStyle,
             onPressed: () {
               Navigator.push(
@@ -73,10 +67,27 @@ class CheckInButtonPage extends StatelessWidget {
                     builder: (context) => const TransferButtonPage()),
               );
             },
-            label: const Text(
-              'Consignments',
-              style: TextStyle(color: Colors.black),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                FaIcon(
+                  Icons.inventory_outlined,
+                  size: 50,
+                  color: Colors.black,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "Consignments",
+                  style: TextStyle(color: Colors.black),
+                )
+              ],
             ),
+            // label: const Text(
+            //   'Consignments',
+            //   style: TextStyle(color: Colors.black),
+            // ),
           ),
           OutlinedButton.icon(
             iconAlignment: IconAlignment.start,
