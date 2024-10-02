@@ -57,7 +57,7 @@ class ButtonsHomepage extends StatelessWidget {
         ],
       ),
       body: GridView.count(
-        crossAxisSpacing: 40,
+        crossAxisSpacing: 20,
         mainAxisSpacing: 20,
         crossAxisCount: 2,
         padding: const EdgeInsets.all(10),
