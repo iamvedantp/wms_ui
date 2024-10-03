@@ -3,17 +3,14 @@ import 'package:code_practice/Functions/Carrier%20Functions/E-Bill%20of%20Lading
 import 'package:code_practice/Functions/Carrier%20Functions/Proof%20Of%20Delivery/prood_of_delivery_home.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Consignments/consignments_home_page.dart';
 import 'package:code_practice/Homepages/operator_homepage.dart';
+import 'package:code_practice/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CheckInButtonPage extends StatelessWidget {
   const CheckInButtonPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle outlinedButtonStyle =
-        OutlinedButton.styleFrom(shape: const BeveledRectangleBorder());
-
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false, // Removes the back button
@@ -58,8 +55,9 @@ class CheckInButtonPage extends StatelessWidget {
         crossAxisCount: 2,
         padding: const EdgeInsets.all(10),
         children: [
-          OutlinedButton(
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.inventory_outlined,
+            label: "Consignments",
             onPressed: () {
               Navigator.push(
                 context,
@@ -67,84 +65,38 @@ class CheckInButtonPage extends StatelessWidget {
                     builder: (context) => const TransferButtonPage()),
               );
             },
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                FaIcon(
-                  Icons.inventory_outlined,
-                  size: 50,
-                  color: Colors.black,
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  "Consignments",
-                  style: TextStyle(color: Colors.black),
-                )
-              ],
-            ),
-            // label: const Text(
-            //   'Consignments',
-            //   style: TextStyle(color: Colors.black),
-            // ),
           ),
-          OutlinedButton.icon(
-            iconAlignment: IconAlignment.start,
-            icon: const FaIcon(
-              Icons.description_outlined,
-              size: 50,
-              color: Colors.black,
-            ),
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.description_outlined,
+            label: "E-Bill Of Lading",
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const EBOLHome()),
               );
             },
-            label: const Text(
-              'E Bill of Lading',
-              style: TextStyle(color: Colors.black),
-            ),
           ),
-          OutlinedButton.icon(
-              iconAlignment: IconAlignment.start,
-              icon: const FaIcon(
-                Icons.local_shipping_outlined,
-                size: 50,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const EWayBillHome()),
-                );
-              },
-              label: const Text(
-                'E-Way Bill',
-                style: TextStyle(color: Colors.black),
-              )),
-          OutlinedButton.icon(
-              iconAlignment: IconAlignment.start,
-              icon: const FaIcon(
-                Icons.receipt_long_outlined,
-                size: 50,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const ProofOfDeliveryHome()),
-                );
-              },
-              label: const Text(
-                'Proof of Delivery',
-                style: TextStyle(color: Colors.black),
-              )),
+          CustomOutlinedButton(
+            icon: Icons.local_shipping_outlined,
+            label: "E-Way Bill",
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const EWayBillHome()),
+              );
+            },
+          ),
+          CustomOutlinedButton(
+            icon: Icons.receipt_long_outlined,
+            label: "Proof Of Delivery",
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const ProofOfDeliveryHome()),
+              );
+            },
+          ),
         ],
       ),
     );

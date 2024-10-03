@@ -7,6 +7,7 @@ import 'package:code_practice/Homepages/carrier_homepage.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Picklists/picklists_home_page.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Consignments/consignments_home_page.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Putaway/putaway_home_page.dart';
+import 'package:code_practice/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -62,8 +63,9 @@ class ButtonsHomepage extends StatelessWidget {
         crossAxisCount: 2,
         padding: const EdgeInsets.all(10),
         children: [
-          OutlinedButton(
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.inventory_outlined,
+            label: 'Stock Transfer Orders',
             onPressed: () {
               Navigator.push(
                 context,
@@ -71,21 +73,21 @@ class ButtonsHomepage extends StatelessWidget {
                     builder: (context) => const StockTransferOrderHome()),
               );
             },
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                FaIcon(
-                  Icons.inventory_outlined,
-                  size: 50,
-                  color: Colors.black,
-                ),
-                SizedBox(height: 10), // Space between icon and text
-                Text(
-                  'Stock Transfer Orders',
-                  style: TextStyle(color: Colors.black),
-                ),
-              ],
-            ),
+            // child: Column(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: const [
+            //     FaIcon(
+            //       Icons.inventory_outlined,
+            //       size: 50,
+            //       color: Colors.black,
+            //     ),
+            //     SizedBox(height: 10), // Space between icon and text
+            //     Text(
+            //       'Stock Transfer Orders',
+            //       style: TextStyle(color: Colors.black),
+            //     ),
+            //   ],
+            // ),
           ),
           OutlinedButton(
             style: outlinedButtonStyle,
