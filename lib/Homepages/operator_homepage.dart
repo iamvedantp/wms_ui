@@ -9,16 +9,12 @@ import 'package:code_practice/Functions/Operator%20Functions/Consignments/consig
 import 'package:code_practice/Functions/Operator%20Functions/Putaway/putaway_home_page.dart';
 import 'package:code_practice/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ButtonsHomepage extends StatelessWidget {
   const ButtonsHomepage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle outlinedButtonStyle =
-        OutlinedButton.styleFrom(shape: const BeveledRectangleBorder());
-
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false, // Removes the back button
@@ -73,24 +69,10 @@ class ButtonsHomepage extends StatelessWidget {
                     builder: (context) => const StockTransferOrderHome()),
               );
             },
-            // child: Column(
-            //   mainAxisAlignment: MainAxisAlignment.center,
-            //   children: const [
-            //     FaIcon(
-            //       Icons.inventory_outlined,
-            //       size: 50,
-            //       color: Colors.black,
-            //     ),
-            //     SizedBox(height: 10), // Space between icon and text
-            //     Text(
-            //       'Stock Transfer Orders',
-            //       style: TextStyle(color: Colors.black),
-            //     ),
-            //   ],
-            // ),
           ),
-          OutlinedButton(
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.warehouse,
+            label: "Shipment Orders",
             onPressed: () {
               Navigator.push(
                 context,
@@ -98,24 +80,10 @@ class ButtonsHomepage extends StatelessWidget {
                     builder: (context) => const ShipmentOrdersHome()),
               );
             },
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                FaIcon(
-                  Icons.warehouse,
-                  size: 50,
-                  color: Colors.black,
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'Shipment Orders',
-                  style: TextStyle(color: Colors.black),
-                ),
-              ],
-            ),
           ),
-          OutlinedButton(
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.forklift,
+            label: "Dispatch Orders",
             onPressed: () {
               Navigator.push(
                 context,
@@ -123,48 +91,20 @@ class ButtonsHomepage extends StatelessWidget {
                     builder: (context) => const DispatchOrdersHome()),
               );
             },
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                FaIcon(
-                  Icons.forklift,
-                  size: 50,
-                  color: Colors.black,
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'Dispatch Orders',
-                  style: TextStyle(color: Colors.black),
-                ),
-              ],
-            ),
           ),
-          OutlinedButton(
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.construction_rounded,
+            label: "ASN",
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const ASNHome()),
               );
             },
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                FaIcon(
-                  Icons.construction_rounded,
-                  size: 50,
-                  color: Colors.black,
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'ASN',
-                  style: TextStyle(color: Colors.black),
-                ),
-              ],
-            ),
           ),
-          OutlinedButton(
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.content_paste_go_outlined,
+            label: 'Consignments',
             onPressed: () {
               Navigator.push(
                 context,
@@ -173,24 +113,10 @@ class ButtonsHomepage extends StatelessWidget {
                 ),
               );
             },
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                FaIcon(
-                  Icons.content_paste_go_outlined,
-                  size: 50,
-                  color: Colors.black,
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'Consignments',
-                  style: TextStyle(color: Colors.black),
-                ),
-              ],
-            ),
           ),
-          OutlinedButton(
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.add_shopping_cart,
+            label: 'Goods Receipt Notes',
             onPressed: () {
               Navigator.push(
                 context,
@@ -198,24 +124,10 @@ class ButtonsHomepage extends StatelessWidget {
                     builder: (context) => const GoodsReceiptNotesHome()),
               );
             },
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                FaIcon(
-                  Icons.add_shopping_cart,
-                  size: 50,
-                  color: Colors.black,
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'Goods Receipt Notes',
-                  style: TextStyle(color: Colors.black),
-                ),
-              ],
-            ),
           ),
-          OutlinedButton(
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.emoji_transportation,
+            label: 'Picklists',
             onPressed: () {
               Navigator.push(
                 context,
@@ -224,24 +136,10 @@ class ButtonsHomepage extends StatelessWidget {
                 ),
               );
             },
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                FaIcon(
-                  Icons.emoji_transportation,
-                  size: 50,
-                  color: Colors.black,
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'Picklists',
-                  style: TextStyle(color: Colors.black),
-                ),
-              ],
-            ),
           ),
-          OutlinedButton(
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.emoji_transportation,
+            label: 'Putaways',
             onPressed: () {
               Navigator.push(
                 context,
@@ -250,21 +148,6 @@ class ButtonsHomepage extends StatelessWidget {
                 ),
               );
             },
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                FaIcon(
-                  Icons.emoji_transportation,
-                  size: 50,
-                  color: Colors.black,
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'Putaways',
-                  style: TextStyle(color: Colors.black),
-                ),
-              ],
-            ),
           ),
         ],
       ),
