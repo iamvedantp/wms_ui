@@ -2,6 +2,7 @@ import 'package:code_practice/Functions/Operator%20Functions/Consignments/replen
 import 'package:code_practice/Functions/Operator%20Functions/Consignments/reverse_replenishment.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Consignments/transfer_item.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Consignments/transfer_pallet.dart';
+import 'package:code_practice/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -23,14 +24,9 @@ class TransferButtonPage extends StatelessWidget {
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
           children: [
-            OutlinedButton.icon(
-              iconAlignment: IconAlignment.start,
-              icon: const FaIcon(
-                FontAwesomeIcons.a,
-                size: 50,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
+            CustomOutlinedButton(
+              icon: Icons.transfer_within_a_station,
+              label: "Transfer Item",
               onPressed: () {
                 Navigator.push(
                   context,
@@ -38,19 +34,10 @@ class TransferButtonPage extends StatelessWidget {
                       builder: (context) => const TransferItemPage()),
                 );
               },
-              label: const Text(
-                'Transfer Item',
-                style: TextStyle(color: Colors.black),
-              ),
             ),
-            OutlinedButton.icon(
-              iconAlignment: IconAlignment.start,
-              icon: const FaIcon(
-                Icons.pallet,
-                size: 50,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
+            CustomOutlinedButton(
+              icon: Icons.pallet,
+              label: "Transfer Pallet",
               onPressed: () {
                 Navigator.push(
                   context,
@@ -58,19 +45,10 @@ class TransferButtonPage extends StatelessWidget {
                       builder: (context) => const TransferPalletPage()),
                 );
               },
-              label: const Text(
-                'Transfer Pallet',
-                style: TextStyle(color: Colors.black),
-              ),
             ),
-            OutlinedButton.icon(
-              iconAlignment: IconAlignment.start,
-              icon: const FaIcon(
-                Icons.local_shipping,
-                size: 50,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
+            CustomOutlinedButton(
+              icon: Icons.local_shipping,
+              label: "Replenishment",
               onPressed: () {
                 Navigator.push(
                   context,
@@ -78,10 +56,6 @@ class TransferButtonPage extends StatelessWidget {
                       builder: (context) => const ReplenishmentPage()),
                 );
               },
-              label: const Text(
-                'Replenishment',
-                style: TextStyle(color: Colors.black),
-              ),
             ),
             OutlinedButton.icon(
               iconAlignment: IconAlignment.start,
