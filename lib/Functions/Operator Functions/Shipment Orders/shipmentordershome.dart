@@ -1,5 +1,6 @@
 import 'package:code_practice/Functions/Operator%20Functions/Shipment%20Orders/shipment_create.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Shipment%20Orders/shipment_review.dart';
+import 'package:code_practice/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
 
 class ShipmentOrdersHome extends StatelessWidget {
@@ -7,10 +8,6 @@ class ShipmentOrdersHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle outlinedButtonStyle = OutlinedButton.styleFrom(
-      shape: const BeveledRectangleBorder(),
-    );
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('Shipment Orders'),
@@ -22,56 +19,32 @@ class ShipmentOrdersHome extends StatelessWidget {
         mainAxisSpacing: 20,
         padding: const EdgeInsets.all(20),
         children: [
-          OutlinedButton.icon(
-            icon: const Icon(
-              Icons.local_shipping,
-              size: 50,
-              color: Colors.black,
-            ),
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.local_shipping,
+            label: "Create Shipment",
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ShipmentCreatePage()),
               );
             },
-            label: const Text(
-              'Create Shipment',
-              style: TextStyle(color: Colors.black),
-            ),
           ),
-          OutlinedButton.icon(
-            icon: const Icon(
-              Icons.search,
-              size: 50,
-              color: Colors.black,
-            ),
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.search,
+            label: "Review Shipments",
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ShipmentReviewPage()),
               );
             },
-            label: const Text(
-              'Review Shipments',
-              style: TextStyle(color: Colors.black),
-            ),
           ),
-          OutlinedButton.icon(
-            icon: const Icon(
-              Icons.cancel,
-              size: 50,
-              color: Colors.black,
-            ),
-            style: outlinedButtonStyle,
+          CustomOutlinedButton(
+            icon: Icons.cancel,
+            label: "Cancel Shipment",
             onPressed: () {
               // Add functionality for cancel shipment
             },
-            label: const Text(
-              'Cancel Shipment',
-              style: TextStyle(color: Colors.black),
-            ),
           ),
         ],
       ),
