@@ -4,16 +4,12 @@ import 'package:code_practice/Functions/Operator%20Functions/Consignments/transf
 import 'package:code_practice/Functions/Operator%20Functions/Consignments/transfer_pallet.dart';
 import 'package:code_practice/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class TransferButtonPage extends StatelessWidget {
   const TransferButtonPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    //Defined the button style once
-    final ButtonStyle outlinedButtonStyle =
-        OutlinedButton.styleFrom(shape: const BeveledRectangleBorder());
     return Scaffold(
       appBar: AppBar(
           title: const Text('Transfer Type'), backgroundColor: Colors.blueGrey),
@@ -57,14 +53,9 @@ class TransferButtonPage extends StatelessWidget {
                 );
               },
             ),
-            OutlinedButton.icon(
-              iconAlignment: IconAlignment.start,
-              icon: const FaIcon(
-                Icons.camera_enhance,
-                size: 50,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
+            CustomOutlinedButton(
+              icon: Icons.camera_enhance,
+              label: "Reverse Replenishment",
               onPressed: () {
                 Navigator.push(
                   context,
@@ -72,10 +63,6 @@ class TransferButtonPage extends StatelessWidget {
                       builder: (context) => const ReverseReplenishmentPage()),
                 );
               },
-              label: const Text(
-                'Reverse Replenishment',
-                style: TextStyle(color: Colors.black),
-              ),
             ),
           ],
         ),
