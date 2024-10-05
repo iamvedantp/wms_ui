@@ -1,5 +1,6 @@
 import 'package:code_practice/Functions/Carrier%20Functions/Proof%20Of%20Delivery/proof_of_delivery_create.dart';
 import 'package:code_practice/Functions/Carrier%20Functions/Proof%20Of%20Delivery/proof_of_delivery_review.dart';
+import 'package:code_practice/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
 
 class ProofOfDeliveryHome extends StatelessWidget {
@@ -7,10 +8,6 @@ class ProofOfDeliveryHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle outlinedButtonStyle = OutlinedButton.styleFrom(
-      shape: const BeveledRectangleBorder(),
-    );
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('Proof of Delivery'),
@@ -23,13 +20,9 @@ class ProofOfDeliveryHome extends StatelessWidget {
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
           children: [
-            OutlinedButton.icon(
-              icon: const Icon(
-                Icons.create,
-                size: 40,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
+            CustomOutlinedButton(
+              icon: Icons.create,
+              label: "Create POD",
               onPressed: () {
                 Navigator.push(
                   context,
@@ -38,18 +31,10 @@ class ProofOfDeliveryHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text(
-                'Create POD',
-                style: TextStyle(color: Colors.black),
-              ),
             ),
-            OutlinedButton.icon(
-              icon: const Icon(
-                Icons.search,
-                size: 40,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
+            CustomOutlinedButton(
+              icon: Icons.search,
+              label: "Review POD",
               onPressed: () {
                 Navigator.push(
                   context,
@@ -58,10 +43,6 @@ class ProofOfDeliveryHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text(
-                'Review POD',
-                style: TextStyle(color: Colors.black),
-              ),
             ),
           ],
         ),
