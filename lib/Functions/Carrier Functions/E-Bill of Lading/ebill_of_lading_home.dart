@@ -1,5 +1,6 @@
 import 'package:code_practice/Functions/Carrier%20Functions/E-Bill%20of%20Lading/ebill_of_lading_create.dart';
 import 'package:code_practice/Functions/Carrier%20Functions/E-Bill%20of%20Lading/ebill_of_lading_review.dart';
+import 'package:code_practice/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
 
 class EBOLHome extends StatelessWidget {
@@ -7,10 +8,6 @@ class EBOLHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle outlinedButtonStyle = OutlinedButton.styleFrom(
-      shape: const BeveledRectangleBorder(),
-    );
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('E-Bill of Lading'),
@@ -23,13 +20,9 @@ class EBOLHome extends StatelessWidget {
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
           children: [
-            OutlinedButton.icon(
-              icon: const Icon(
-                Icons.create,
-                size: 40,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
+            CustomOutlinedButton(
+              icon: Icons.create,
+              label: "Create E-Bill Of Lading",
               onPressed: () {
                 Navigator.push(
                   context,
@@ -38,18 +31,10 @@ class EBOLHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text(
-                'Create E-Bill of Lading',
-                style: TextStyle(color: Colors.black),
-              ),
             ),
-            OutlinedButton.icon(
-              icon: const Icon(
-                Icons.search,
-                size: 40,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
+            CustomOutlinedButton(
+              icon: Icons.search,
+              label: "Review E-Bill Of Lading",
               onPressed: () {
                 Navigator.push(
                   context,
@@ -58,10 +43,6 @@ class EBOLHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text(
-                'Review E-Bill of Lading',
-                style: TextStyle(color: Colors.black),
-              ),
             ),
           ],
         ),

@@ -1,5 +1,6 @@
 import 'package:code_practice/Functions/Carrier%20Functions/E-Way%20Bill/eway_bill_create.dart';
 import 'package:code_practice/Functions/Carrier%20Functions/E-Way%20Bill/eway_bill_review.dart';
+import 'package:code_practice/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
 
 class EWayBillHome extends StatelessWidget {
@@ -7,10 +8,6 @@ class EWayBillHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle outlinedButtonStyle = OutlinedButton.styleFrom(
-      shape: const BeveledRectangleBorder(),
-    );
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('E-Way Bill'),
@@ -23,13 +20,9 @@ class EWayBillHome extends StatelessWidget {
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
           children: [
-            OutlinedButton.icon(
-              icon: const Icon(
-                Icons.create,
-                size: 40,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
+            CustomOutlinedButton(
+              icon: Icons.create,
+              label: "Create E-Way Bill",
               onPressed: () {
                 Navigator.push(
                   context,
@@ -38,18 +31,10 @@ class EWayBillHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text(
-                'Create E-Way Bill',
-                style: TextStyle(color: Colors.black),
-              ),
             ),
-            OutlinedButton.icon(
-              icon: const Icon(
-                Icons.search,
-                size: 40,
-                color: Colors.black,
-              ),
-              style: outlinedButtonStyle,
+            CustomOutlinedButton(
+              icon: Icons.search,
+              label: "Review W-Way Bill",
               onPressed: () {
                 Navigator.push(
                   context,
@@ -58,10 +43,6 @@ class EWayBillHome extends StatelessWidget {
                   ),
                 );
               },
-              label: const Text(
-                'Review E-Way Bill',
-                style: TextStyle(color: Colors.black),
-              ),
             ),
           ],
         ),
