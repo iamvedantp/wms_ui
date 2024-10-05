@@ -4,10 +4,10 @@ class DispatchCreatePage extends StatefulWidget {
   const DispatchCreatePage({super.key});
 
   @override
-  _DispatchCreatePageState createState() => _DispatchCreatePageState();
+  DispatchCreatePageState createState() => DispatchCreatePageState();
 }
 
-class _DispatchCreatePageState extends State<DispatchCreatePage> {
+class DispatchCreatePageState extends State<DispatchCreatePage> {
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _dispatchIdController = TextEditingController();
   final TextEditingController _destinationController = TextEditingController();

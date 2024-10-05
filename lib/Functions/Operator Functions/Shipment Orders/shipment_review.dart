@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ShipmentReviewPage extends StatefulWidget {
+  const ShipmentReviewPage({super.key});
+
   @override
-  _ShipmentReviewPageState createState() => _ShipmentReviewPageState();
+  ShipmentReviewPageState createState() => ShipmentReviewPageState();
 }
 
-class _ShipmentReviewPageState extends State<ShipmentReviewPage> {
+class ShipmentReviewPageState extends State<ShipmentReviewPage> {
   final List<Map<String, String>> _shipments = [
     {
       "id": "SHP001",
