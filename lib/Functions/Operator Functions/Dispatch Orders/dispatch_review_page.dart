@@ -4,11 +4,12 @@ class DispatchReviewPage extends StatefulWidget {
   const DispatchReviewPage({super.key});
 
   @override
-  _DispatchReviewPageState createState() => _DispatchReviewPageState();
+  DispatchReviewPageState createState() => DispatchReviewPageState();
 }
 
-class _DispatchReviewPageState extends State<DispatchReviewPage> {
-  final List<Map<String, String>> _dispatches = [
+class DispatchReviewPageState extends State<DispatchReviewPage> {
+  // Changed _dispatches to dispatches (public)
+  final List<Map<String, String>> dispatches = [
     {
       "id": "DSP001",
       "destination": "Store A",
@@ -29,9 +30,9 @@ class _DispatchReviewPageState extends State<DispatchReviewPage> {
         title: const Text('Review Dispatch Orders'),
       ),
       body: ListView.builder(
-        itemCount: _dispatches.length,
+        itemCount: dispatches.length,
         itemBuilder: (context, index) {
-          final dispatch = _dispatches[index];
+          final dispatch = dispatches[index];
           return Card(
             margin: const EdgeInsets.all(10),
             child: ListTile(
@@ -41,7 +42,6 @@ class _DispatchReviewPageState extends State<DispatchReviewPage> {
               trailing: IconButton(
                 icon: const Icon(Icons.info_outline),
                 onPressed: () {
-                  // Show dispatch details in a dialog or navigate to another page
                   _showDispatchDetailsDialog(dispatch);
                 },
               ),

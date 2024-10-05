@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ShipmentCreatePage extends StatefulWidget {
+  const ShipmentCreatePage({super.key});
+
   @override
-  _ShipmentCreatePageState createState() => _ShipmentCreatePageState();
+  ShipmentCreatePageState createState() => ShipmentCreatePageState();
 }
 
-class _ShipmentCreatePageState extends State<ShipmentCreatePage> {
+class ShipmentCreatePageState extends State<ShipmentCreatePage> {
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _shipmentIdController = TextEditingController();
   final TextEditingController _destinationController = TextEditingController();

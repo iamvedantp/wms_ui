@@ -5,6 +5,8 @@ class CreateStockTransferPage extends StatelessWidget {
   final TextEditingController quantityController = TextEditingController();
   final TextEditingController destinationController = TextEditingController();
 
+  CreateStockTransferPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
