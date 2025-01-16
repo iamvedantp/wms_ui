@@ -54,3 +54,34 @@ class StockTransferOrderHome extends StatelessWidget {
     );
   }
 }
+
+// Potential Scaffolding for Cancel Transfer functionality
+/*
+          onPressed: () {
+            // Prompt user for confirmation
+            showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return AlertDialog(
+                  title: const Text('Confirm Cancel Transfer'),
+                  content: const Text('Are you sure you want to cancel this transfer?'),
+                  actions: [
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      child: const Text('Cancel'),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        // Implement actual cancellation logic
+                        Navigator.pop(context);
+                      },
+                      child: const Text('Yes'),
+                    ),
+                  ],
+                );
+              },
+            );
+          },
+*/

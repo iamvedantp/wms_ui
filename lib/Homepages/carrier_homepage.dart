@@ -1,6 +1,6 @@
 import 'package:code_practice/Functions/Carrier%20Functions/E-Way%20Bill/eway_bill_home.dart';
 import 'package:code_practice/Functions/Carrier%20Functions/E-Bill%20of%20Lading/ebill_of_lading_home.dart';
-import 'package:code_practice/Functions/Carrier%20Functions/Proof%20Of%20Delivery/prood_of_delivery_home.dart';
+import 'package:code_practice/Functions/Carrier%20Functions/Proof%20Of%20Delivery/proof_of_delivery_home.dart';
 import 'package:code_practice/Functions/Operator%20Functions/Consignments/consignments_home_page.dart';
 import 'package:code_practice/Homepages/operator_homepage.dart';
 import 'package:code_practice/custom_outlined_button.dart';

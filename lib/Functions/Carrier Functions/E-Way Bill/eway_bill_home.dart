@@ -34,7 +34,7 @@ class EWayBillHome extends StatelessWidget {
             ),
             CustomOutlinedButton(
               icon: Icons.search,
-              label: "Review W-Way Bill",
+              label: "Review E-Way Bill",
               onPressed: () {
                 Navigator.push(
                   context,
