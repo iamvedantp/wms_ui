@@ -73,3 +73,20 @@ class ShipmentReviewPageState extends State<ShipmentReviewPage> {
     );
   }
 }
+
+/*
+// Snippet to add a refresh indicator for fetching updated shipment data:
+RefreshIndicator(
+  onRefresh: () async {
+    // Implement logic to fetch updated shipment data here
+    await Future.delayed(const Duration(seconds: 2)); // Simulate network delay
+    setState(() {
+      // Update _shipments list with new data
+      _shipments.add({"id": "SHP003", "destination": "Warehouse C", "status": "Pending"});
+    });
+  },
+  child: ListView.builder(
+    // ... rest of the ListView.builder code
+  ),
+),
+*/
